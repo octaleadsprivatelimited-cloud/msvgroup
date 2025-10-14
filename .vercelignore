@@ -1,0 +1,7 @@
+documentation/
+*.md
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
+
