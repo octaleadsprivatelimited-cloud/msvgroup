@@ -1,0 +1,125 @@
+================================================================================
+QUICK IMAGE REPLACEMENT GUIDE - Industro Template
+================================================================================
+
+PRIORITY 1 - MUST REPLACE (Most Visible)
+----------------------------------------
+Category          | Files Needed    | Dimensions  | Location
+------------------|-----------------|-------------|---------------------------
+Logo (Dark)       | 1 image         | 225x56px    | /html/images/logo-dark.png
+Logo (Light)      | 1 image         | 225x56px    | /html/images/logo-light.png
+Main Sliders      | 3 images        | 1920x720px  | /html/images/main-slider/slider1/
+Homepage Projects | 4-6 images      | 373x469px   | /html/images/project/
+Team Photos       | 3-4 images      | 453x500px   | /html/images/team/
+
+PRIORITY 2 - SHOULD REPLACE (Frequently Seen)
+----------------------------------------------
+Blog Thumbnails   | 6-10 images     | 1000x600px  | /html/images/blog/default/
+Service Images    | 6-8 images      | Various     | /html/images/services/
+Client Logos      | 6 logos         | PNG         | /html/images/client-logo/
+
+PRIORITY 3 - CAN REPLACE LATER
+-------------------------------
+Testimonials      | 3-4 images      | Various     | /html/images/testimonials/
+Gallery           | 10-15 images    | Various     | /html/images/gallery/
+Backgrounds       | As needed       | Various     | /html/images/background/
+
+================================================================================
+FREE STOCK PHOTO WEBSITES
+================================================================================
+
+Industrial & Construction Images:
+----------------------------------
+1. Unsplash.com - Search: "industrial", "construction", "factory"
+2. Pexels.com - Search: "machinery", "engineering", "manufacturing"
+3. Pixabay.com - Search: "industry", "building", "workplace"
+
+Professional Team Photos:
+-------------------------
+1. Unsplash.com - Search: "business team", "professional portrait"
+2. Pexels.com - Search: "corporate", "office workers"
+
+Logo Creation (if needed):
+--------------------------
+1. Canva.com - Free logo maker
+2. LogoMakr.com - Simple logo design tool
+
+================================================================================
+PLACEHOLDER IMAGE GENERATORS (Temporary Use)
+================================================================================
+
+If you want to use placeholder images temporarily:
+
+Via Placeholder:
+- Format: https://via.placeholder.com/WIDTHxHEIGHT
+- Example: https://via.placeholder.com/1920x720
+
+Placehold.co:
+- Format: https://placehold.co/WIDTHxHEIGHT
+- Example: https://placehold.co/373x469
+
+Lorem Picsum (Random Photos):
+- Format: https://picsum.photos/WIDTH/HEIGHT
+- Example: https://picsum.photos/1920/720
+
+================================================================================
+STEP-BY-STEP REPLACEMENT PROCESS
+================================================================================
+
+1. DOWNLOAD YOUR IMAGES
+   - Go to stock photo website
+   - Search for relevant terms
+   - Download images (usually free license)
+
+2. RESIZE IF NEEDED
+   - Use free tools like:
+     * GIMP (free Photoshop alternative)
+     * Online resizers: iloveimg.com/resize-image
+     * Preview app on Mac
+
+3. OPTIMIZE FILE SIZE
+   - Use TinyPNG.com or TinyJPG.com
+   - Reduces file size without losing quality
+   - Faster website loading
+
+4. RENAME FILES
+   - Keep same names as current images OR
+   - Update HTML files to reference new names
+
+5. REPLACE FILES
+   - Delete old images
+   - Copy new images to same location
+   - Refresh browser to see changes
+
+================================================================================
+EXAMPLE: Replacing Main Slider
+================================================================================
+
+Current files location:
+/Users/sri/Downloads/industro-html/html/images/main-slider/slider1/
+
+Files to replace:
+- slide1.jpg (1920x720px)
+- slide2.jpg (1920x720px)  
+- slide3.jpg (1920x720px)
+
+Steps:
+1. Download 3 industrial/construction images from Unsplash
+2. Resize them to 1920x720px
+3. Compress them with TinyJPG
+4. Rename to slide1.jpg, slide2.jpg, slide3.jpg
+5. Replace files in folder
+6. Refresh http://localhost:3000/
+
+================================================================================
+NEED HELP?
+================================================================================
+
+Full detailed inventory: See IMAGE-INVENTORY.md file
+Website URL: http://localhost:3000/
+Project location: /Users/sri/Downloads/industro-html/
+
+Tip: Start with Priority 1 images - they have the biggest visual impact!
+
+================================================================================
+
