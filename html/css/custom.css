@@ -2,6 +2,13 @@
 YOU CAN WRIGHT CUSTOME CSS 
 ======================================*/
 
+/* Logo Size Reduction - 50% smaller */
+.logo-header img,
+.logo-footer img {
+    max-width: 50% !important;
+    height: auto !important;
+}
+
 /* Video Hero Section Responsive Styles */
 .video-hero-section {
     position: relative;
