@@ -2,11 +2,6 @@
 YOU CAN WRIGHT CUSTOME CSS 
 ======================================*/
 
-/* Hide Pages Menu */
-.hide-pages-menu {
-    display: none !important;
-}
-
 /* Logo Size Reduction - 50% smaller */
 .logo-header img,
 .logo-footer img {
