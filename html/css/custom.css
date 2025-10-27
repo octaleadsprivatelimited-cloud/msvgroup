@@ -3,7 +3,6 @@ YOU CAN WRIGHT CUSTOME CSS
 ======================================*/
 
 /* Logo Size Reduction - 50% smaller */
-.logo-header img,
 .logo-footer img {
     max-width: 50% !important;
     height: auto !important;
@@ -15,6 +14,7 @@ YOU CAN WRIGHT CUSTOME CSS
     height: 100vh;
     min-height: 600px;
     overflow: hidden;
+    margin-top: -75px;
 }
 
 .video-hero-section .hero-overlay {
