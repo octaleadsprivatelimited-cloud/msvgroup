@@ -1211,14 +1211,6 @@ $.fn.owlFilter = function(data, callback) {
     Window on scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
 
-    function color_fill_header() {
-        var scroll = $(window).scrollTop();
-        if(scroll >= 100) {
-            $(".is-fixed").addClass("color-fill");
-        } else {
-            $(".is-fixed").removeClass("color-fill");
-        }
-    }
 	
 	// Bootstrap Select box function by  = bootstrap-select.min.js
 	function Bootstrap_Select(){	
@@ -1349,8 +1341,7 @@ $.fn.owlFilter = function(data, callback) {
 ===========================*/
 
 	jQuery(window).on('scroll', function () {
-	// > Window on scroll header color fill 
-		color_fill_header();
+	// > Window scroll functions
 	});
 	
 /*===========================

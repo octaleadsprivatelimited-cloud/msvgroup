@@ -839,3 +839,14 @@ body {
     }
 }
 
+/* Hide legacy color palette / style switcher everywhere */
+.styleswitcher,
+.styleswitcher *,
+.switcher-btn-bx,
+.switcher-btn-bx * {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
