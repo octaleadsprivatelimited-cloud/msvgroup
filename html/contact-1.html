@@ -43,6 +43,8 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
         <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+    <!-- APPLE HEADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/apple-header.css">
     
     <!-- IMAGE POPUP -->
     <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css" />     
@@ -65,6 +67,107 @@
 </head>
 
 <body>
+
+    <!-- TOP CONTACT BAR -->
+    <div class="top-contact-bar">
+        <div class="top-contact-container">
+            <div class="top-contact-left">
+                <span class="contact-item"><i class="fa fa-phone"></i> +91 88850 90666</span>
+                <span class="contact-item"><i class="fa fa-envelope"></i> Info@msvgroupindia.com</span>
+                <span class="contact-item"><i class="fa fa-map-marker"></i> Hyderabad-T.G India</span>
+            </div>
+            <div class="top-contact-right">
+                <a href="https://wa.me/918885090666" target="_blank" class="whatsapp-link"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLE.COM STYLE HEADER -->
+    <header class="apple-header">
+        <div class="header-container">
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" type="button">
+                <span class="icon-bar icon-bar-first"></span>
+                <span class="icon-bar icon-bar-two"></span>
+                <span class="icon-bar icon-bar-three"></span>
+            </button>
+            
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="MSV Group India" />
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li>
+                        <a href="javascript:;">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="s-oilgas.html">Steel Doors</a></li>
+                            <li><a href="s-chemical.html">Steel Windows</a></li>
+                            <li><a href="s-agricultural.html">School Furniture</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Overlay -->
+            <div class="mobile-overlay"></div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <button class="mobile-close" type="button"></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:;">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="s-oilgas.html">Steel Doors</a></li>
+                            <li><a href="s-chemical.html">Steel Windows</a></li>
+                            <li><a href="s-agricultural.html">School Furniture</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Contact Section -->
+                <div class="mobile-contact-section">
+                    <div class="mobile-contact-header">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="mobile-contact-info">
+                        <div class="mobile-contact-item">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+918885090666">+91 88850 90666</a>
+                        </div>
+                        <div class="mobile-contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:Info@msvgroupindia.com">Info@msvgroupindia.com</a>
+                        </div>
+                        <div class="mobile-contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Hyderabad-T.G India</span>
+                        </div>
+                        <div class="mobile-contact-item">
+                            <i class="fa fa-whatsapp"></i>
+                            <a href="https://wa.me/918885090666" target="_blank">WhatsApp Us</a>
+                        </div>
+                    </div>
+                    <div class="mobile-map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.8937!2d78.4867!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzA2LjAiTiA3OMKwMjknMTIuMSJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <div class="page-wraper"> 
     
@@ -486,6 +589,7 @@
 <script src="js/map.script.js"></script>
 <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
 <script  src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+<script  src="js/apple-header.js"></script><!-- APPLE HEADER FUNCTIONS  -->
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script  src="js/lc_lightbox.lite.js" ></script><!-- IMAGE POPUP -->
 <script  src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
