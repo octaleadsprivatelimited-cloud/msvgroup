@@ -235,14 +235,14 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     position: absolute !important;
     top: 100% !important;
     left: 50% !important;
-    transform: translateX(-50%) translateY(-10px) !important;
+    transform: translateX(-50%) translateY(0) !important;
     background: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: saturate(180%) blur(20px) !important;
     -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
     border-radius: 8px !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
     padding: 8px 0 !important;
-    margin-top: 8px !important;
+    margin-top: 0 !important;
     min-width: 200px !important;
     opacity: 0 !important;
     visibility: hidden !important;
@@ -266,6 +266,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     visibility: visible !important;
     transform: translateX(-50%) translateY(0) !important;
     pointer-events: auto !important;
+    margin-top: 0 !important;
 }
 
 .apple-header .desktop-nav .sub-menu li {
@@ -299,6 +300,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     visibility: visible !important;
     transform: translateX(-50%) translateY(0) !important;
     pointer-events: auto !important;
+    margin-top: 0 !important;
 }
 
 /* Hamburger Menu Button */
