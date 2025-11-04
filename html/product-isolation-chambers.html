@@ -60,13 +60,11 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
         
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">     
+    <!-- GOOGLE FONTS - REMOVED (Using Arial and Geneva instead) -->     
  
 </head>
 
-<body>
+<body class="product-isolation-chambers">
 
     <!-- TOP CONTACT BAR -->
     <div class="top-contact-bar">
@@ -192,6 +190,75 @@
                 </div>
             </div>
             <!-- INNER PAGE BANNER END -->
+            
+            <!-- IMAGE GALLERY START -->
+            <div class="section-full p-t80 p-b50 bg-gray">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="product-gallery-carousel owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00001.jpeg" data-lcl-txt="Isolation Chamber 1" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00001.jpeg" alt="Isolation Chamber 1" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00002.jpeg" data-lcl-txt="Isolation Chamber 2" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00002.jpeg" alt="Isolation Chamber 2" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00003.jpeg" data-lcl-txt="Isolation Chamber 3" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00003.jpeg" alt="Isolation Chamber 3" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00004.jpeg" data-lcl-txt="Isolation Chamber 4" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00004.jpeg" alt="Isolation Chamber 4" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00005.jpeg" data-lcl-txt="Isolation Chamber 5" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00005.jpeg" alt="Isolation Chamber 5" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00006.jpeg" data-lcl-txt="Isolation Chamber 6" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00006.jpeg" alt="Isolation Chamber 6" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00007.jpeg" data-lcl-txt="Isolation Chamber 7" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00007.jpeg" alt="Isolation Chamber 7" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="gallery-item">
+                                        <a href="media/images/msv group/msv00008.jpeg" data-lcl-txt="Isolation Chamber 8" class="lc_lightbox">
+                                            <img src="media/images/msv group/msv00008.jpeg" alt="Isolation Chamber 8" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- IMAGE GALLERY END -->
 
              <!-- PRODUCT CONTENT START -->
             <div class="section-full p-t80 p-b50 bg-white">
@@ -432,8 +499,49 @@
     </div>    
 </div>
 <!-- STYLE SWITCHER END ==== -->
-
-
+    
+    <!-- Initialize Lightbox -->
+    <script>
+        jQuery(document).ready(function($) {
+            lc_lightbox('.lc_lightbox', {
+                wrap_class: 'lcl_fade_oc',
+                gallery: true,
+                thumb_attr: 'data-lcl-thumb',
+                slideshow_time: 3000,
+                skin: 'minimal'
+            });
+        });
+    </script>
+    
+    <!-- Product Gallery Carousel Initialization -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('.product-gallery-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    }
+                },
+                navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>']
+            });
+        });
+    </script>
 
 </body>
 

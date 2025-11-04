@@ -56,7 +56,7 @@ YOU CAN WRIGHT CUSTOME CSS
     font-size: 120px;
     line-height: 100px;
     font-weight: 300;
-    font-family: 'Teko', sans-serif;
+    font-family: Arial, Geneva, sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -64,7 +64,7 @@ YOU CAN WRIGHT CUSTOME CSS
 .video-hero-section .hero-content h2 {
     font-size: 48px;
     font-weight: 300;
-    font-family: 'Teko', sans-serif;
+    font-family: Arial, Geneva, sans-serif;
     padding: 10px 0 10px 30px;
     border-left: 4px solid;
     margin-bottom: 20px;
@@ -73,7 +73,7 @@ YOU CAN WRIGHT CUSTOME CSS
 .video-hero-section .hero-content p {
     font-size: 20px;
     line-height: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Geneva, sans-serif;
     margin-bottom: 30px;
     max-width: 600px;
 }
@@ -114,4 +114,230 @@ YOU CAN WRIGHT CUSTOME CSS
         font-size: 16px;
         line-height: 22px;
     }
+}
+
+/* Product Gallery Carousel - 4 Columns with Sliding */
+.product-gallery-carousel {
+    margin: 0 auto;
+}
+
+.product-gallery-carousel .gallery-item {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-gallery-carousel .gallery-item a {
+    display: block;
+    text-decoration: none;
+}
+
+.product-gallery-carousel .gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-gallery-carousel .gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Owl Carousel Navigation & Dots */
+.product-gallery-carousel .owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-gallery-carousel .owl-nav button {
+    background: #1e3a8a !important;
+    color: #ffffff !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.product-gallery-carousel .owl-nav button:hover {
+    background: #1e40af !important;
+    transform: scale(1.1);
+}
+
+.product-gallery-carousel .owl-nav button span {
+    display: none;
+}
+
+.product-gallery-carousel .owl-nav button::before {
+    font-family: 'FontAwesome';
+    font-size: 18px;
+}
+
+.product-gallery-carousel .owl-nav button.owl-prev::before {
+    content: '\f104';
+}
+
+.product-gallery-carousel .owl-nav button.owl-next::before {
+    content: '\f105';
+}
+
+.product-gallery-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-gallery-carousel .owl-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d1d5db !important;
+    margin: 0 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.product-gallery-carousel .owl-dots button.active {
+    background: #1e3a8a !important;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .product-gallery-carousel .gallery-item img {
+        max-height: 220px;
+    }
+    
+    .product-gallery-carousel .owl-nav button {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-gallery-carousel .gallery-item {
+        padding: 8px;
+    }
+    
+    .product-gallery-carousel .gallery-item img {
+        max-height: 200px;
+    }
+    
+    .product-gallery-carousel .owl-nav button {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    
+    .product-gallery-carousel .owl-dots {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .product-gallery-carousel .gallery-item img {
+        max-height: 180px;
+    }
+}
+
+/* Product Page Button Styling - Blue Buttons */
+.product-clean-room-project-design-and-execution .site-button,
+.product-isolation-chambers .site-button,
+.product-wall-partitions-cealing-partitions .site-button,
+.product-doors-clean-room-doors-wooden-doors .site-button,
+.product-laminar-air-flow-systems .site-button,
+.product-unit-dust-collectors .site-button,
+.product-hepa-filters-pre-fine-filters .site-button,
+.product-vinyl-epoxy-flooring .site-button,
+.product-bed-head-panels .site-button,
+.product-hospital-ot-icu-designs .site-button,
+.product-clean-room-project-design-and-execution .site-button:active,
+.product-isolation-chambers .site-button:active,
+.product-wall-partitions-cealing-partitions .site-button:active,
+.product-doors-clean-room-doors-wooden-doors .site-button:active,
+.product-laminar-air-flow-systems .site-button:active,
+.product-unit-dust-collectors .site-button:active,
+.product-hepa-filters-pre-fine-filters .site-button:active,
+.product-vinyl-epoxy-flooring .site-button:active,
+.product-bed-head-panels .site-button:active,
+.product-hospital-ot-icu-designs .site-button:active,
+.product-clean-room-project-design-and-execution .site-button:focus,
+.product-isolation-chambers .site-button:focus,
+.product-wall-partitions-cealing-partitions .site-button:focus,
+.product-doors-clean-room-doors-wooden-doors .site-button:focus,
+.product-laminar-air-flow-systems .site-button:focus,
+.product-unit-dust-collectors .site-button:focus,
+.product-hepa-filters-pre-fine-filters .site-button:focus,
+.product-vinyl-epoxy-flooring .site-button:focus,
+.product-bed-head-panels .site-button:focus,
+.product-hospital-ot-icu-designs .site-button:focus,
+.product-clean-room-project-design-and-execution .site-button:visited,
+.product-isolation-chambers .site-button:visited,
+.product-wall-partitions-cealing-partitions .site-button:visited,
+.product-doors-clean-room-doors-wooden-doors .site-button:visited,
+.product-laminar-air-flow-systems .site-button:visited,
+.product-unit-dust-collectors .site-button:visited,
+.product-hepa-filters-pre-fine-filters .site-button:visited,
+.product-vinyl-epoxy-flooring .site-button:visited,
+.product-bed-head-panels .site-button:visited,
+.product-hospital-ot-icu-designs .site-button:visited {
+    background-color: #1e3a8a !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 15px 40px !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.product-clean-room-project-design-and-execution .site-button:hover,
+.product-isolation-chambers .site-button:hover,
+.product-wall-partitions-cealing-partitions .site-button:hover,
+.product-doors-clean-room-doors-wooden-doors .site-button:hover,
+.product-laminar-air-flow-systems .site-button:hover,
+.product-unit-dust-collectors .site-button:hover,
+.product-hepa-filters-pre-fine-filters .site-button:hover,
+.product-vinyl-epoxy-flooring .site-button:hover,
+.product-bed-head-panels .site-button:hover,
+.product-hospital-ot-icu-designs .site-button:hover {
+    background-color: #1e40af !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3) !important;
+}
+
+/* CTA Section Button - Ensure visibility on blue background */
+.site-bg-primary .site-button {
+    background-color: #ffffff !important;
+    color: #1e3a8a !important;
+    border: 2px solid #ffffff !important;
+    padding: 15px 40px !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.site-bg-primary .site-button:hover {
+    background-color: #f0f0f0 !important;
+    color: #1e3a8a !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3) !important;
 }
