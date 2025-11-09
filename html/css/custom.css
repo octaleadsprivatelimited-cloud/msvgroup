@@ -146,6 +146,52 @@ YOU CAN WRIGHT CUSTOME CSS
     }
 }
 
+.whatsapp-float {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .whatsapp-float {
+        right: 18px;
+        bottom: 18px;
+        width: 54px;
+        height: 54px;
+        font-size: 26px;
+    }
+}
+
+.play-now-static {
+    cursor: default;
+    pointer-events: none;
+}
+
+.welcome-section-outer .colarge-1 img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+}
+
 /* Product Gallery Carousel - 4 Columns with Sliding */
 .product-gallery-carousel {
     margin: 0 auto;
