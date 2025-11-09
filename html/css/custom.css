@@ -116,6 +116,36 @@ YOU CAN WRIGHT CUSTOME CSS
     }
 }
 
+.section-title-full-width {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+@media (max-width: 991px) {
+    .section-title-full-width {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title-full-width {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-title-full-width {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
 /* Product Gallery Carousel - 4 Columns with Sliding */
 .product-gallery-carousel {
     margin: 0 auto;
