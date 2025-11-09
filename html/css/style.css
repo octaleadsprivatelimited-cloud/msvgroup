@@ -10052,11 +10052,12 @@ transform:skewX(24deg);
 -------------------------------------*/
 
 .wt-bnr-inr {
-	height: 250px;
-	background-size: cover;
-	background-position: center center;
-	display: table;
-	width: 100%;
+    min-height: 420px;
+    padding: 140px 0;
+    background-size: cover;
+    background-position: center center;
+    display: table;
+    width: 100%;
 }
 
 .wt-bnr-inr .container {
@@ -10077,14 +10078,21 @@ transform:skewX(24deg);
 	font-size:58px;
 }
 @media only screen and (max-width: 991px) {
-	.wt-bnr-inr {
-		height: 330px;
-		padding-top: 120px;
-	}
-	
-	.wt-bnr-inr-entry {
-		text-align: center;
-	}
+    .wt-bnr-inr {
+        min-height: 320px;
+        padding: 110px 0;
+    }
+    
+    .wt-bnr-inr-entry {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wt-bnr-inr {
+        min-height: 260px;
+        padding: 90px 0;
+    }
 }
 
 @media only screen and (max-width: 540px) {
