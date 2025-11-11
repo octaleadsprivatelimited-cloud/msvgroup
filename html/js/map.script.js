@@ -16,7 +16,7 @@
 				map: map2,
 				position: new google.maps.LatLng(17.532208, 78.476032),
 				optimized: false,
-				icon: new google.maps.MarkerImage('images/marker.png')
+				icon: new google.maps.MarkerImage('media/images/marker.png')
 			});
 
 			marker2.setDraggable(true);		
@@ -48,7 +48,7 @@
 				map: map4,
 				position: new google.maps.LatLng(17.532208, 78.476032),
 				optimized: false,
-				icon: new google.maps.MarkerImage('images/marker2.png')
+				icon: new google.maps.MarkerImage('media/images/marker.png')
 			});
 
 			marker4.setDraggable(true);		
@@ -82,7 +82,7 @@
 				map: map6,
 				position: new google.maps.LatLng(17.532208, 78.476032),
 				optimized: false,
-				icon: new google.maps.MarkerImage('images/marker2.png')
+				icon: new google.maps.MarkerImage('media/images/marker.png')
 			});
 
 			marker6.setDraggable(true);		
