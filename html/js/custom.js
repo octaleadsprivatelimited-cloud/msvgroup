@@ -1207,6 +1207,42 @@ $.fn.owlFilter = function(data, callback) {
 		$('.loading-area').fadeOut(1000);
 	}
 
+// > WhatsApp floating button initializer ========================= //
+	function init_whatsapp_floating_button() {
+		var whatsappNumber = '918885090666';
+		var whatsappSelector = '.whatsapp-float';
+		var whatsappHref = 'https://wa.me/' + whatsappNumber;
+
+		if (jQuery(whatsappSelector).length) {
+			jQuery(whatsappSelector)
+				.attr('href', whatsappHref)
+				.attr('target', '_blank')
+				.attr('rel', 'noopener noreferrer')
+				.attr('aria-label', 'Chat with us on WhatsApp');
+
+			if (jQuery(whatsappSelector).find('.fa-whatsapp').length === 0) {
+				jQuery(whatsappSelector).html('<i class="fa fa-whatsapp" aria-hidden="true"></i>');
+			}
+
+			return;
+		}
+
+		var $button = jQuery('<a/>', {
+			'class': 'whatsapp-float',
+			'href': whatsappHref,
+			'target': '_blank',
+			'rel': 'noopener noreferrer',
+			'aria-label': 'Chat with us on WhatsApp'
+		});
+
+		$button.append(jQuery('<i/>', {
+			'class': 'fa fa-whatsapp',
+			'aria-hidden': 'true'
+		}));
+
+		jQuery('body').append($button);
+	}
+
 /*--------------------------------------------------------------------------------------------
     Window on scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
@@ -1318,7 +1354,9 @@ $.fn.owlFilter = function(data, callback) {
 		//  Counter Section function by = counterup.min.js ========================== //
 		counter_section(),
 		//  MAKE AN APPOINTMENT Section function by = counterup.min.js
-		contact_slide()	;
+		contact_slide(),
+		// > WhatsApp floating button initializer ========================= //
+		init_whatsapp_floating_button();
 				
 	}); 	
 
