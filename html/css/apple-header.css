@@ -31,7 +31,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 28px;
+    height: 44px;
 }
 
 .top-contact-left {
@@ -112,7 +112,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
 /* Fixed Header Container */
 .apple-header {
     position: fixed;
-    top: 28px;
+    top: 44px;
     left: 0;
     right: 0;
     width: 100%;
@@ -155,9 +155,12 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
 .apple-header .logo img {
     height: 45px;
     width: auto;
+    max-width: none;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
     filter: none;
+    transform: scale(1.08, 1);
+    transform-origin: left center;
 }
 
 .apple-header .logo:hover img {
@@ -350,7 +353,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
 
 /* Body Padding for Fixed Header */
 body {
-    padding-top: 75px;
+    padding-top: 91px;
 }
 
 /* Mobile Styles */
