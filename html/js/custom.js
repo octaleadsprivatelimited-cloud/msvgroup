@@ -273,28 +273,36 @@ function cart_block(){
 	jQuery('.services-slider').owlCarousel({
 		loop:true,
 		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 		nav:true,
-		dots: false,	
-		margin:10,
-		navText: ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>'],
+		dots: true,	
+		margin:20,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 		responsive:{
 			0:{
 				items:1,
+				margin:10,
 			},
 			640:{
 				items:1,
+				margin:15,
 			},			
 			767:{
 				items:2,
+				margin:20,
      		},				
 			991:{
 				items:2,
+				margin:20,
 			},
 			1366:{
 				items:2,
+				margin:25,
 			},			
 			1400:{
-				items:3
+				items:2,
+				margin:25,
 			}		
 		}
 	});
@@ -348,6 +356,86 @@ function cart_block(){
 			},
 			1400:{
 				items:1
+			}		
+		}
+	});
+	}
+	
+// Modern Recent Work Slider function by = owl.carousel.js ========================== //
+	function modern_recent_work_slider(){
+	jQuery('.modern-recent-work-slider').owlCarousel({
+		loop:true,
+		autoplay:true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		nav:true,
+		dots: true,	
+		margin:20,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		responsive:{
+			0:{
+				items:1,
+				margin:10,
+			},
+			640:{
+				items:1,
+				margin:15,
+			},			
+			767:{
+				items:2,
+				margin:20,
+     		},				
+			991:{
+				items:2,
+				margin:20,
+			},
+			1366:{
+				items:3,
+				margin:25,
+			},			
+			1400:{
+				items:3,
+				margin:25,
+			}		
+		}
+	});
+	}
+	
+// Modern Testimonial Carousel function by = owl.carousel.js ========================== //
+	function modern_testimonial_carousel(){
+	jQuery('.modern-testimonial-carousel').owlCarousel({
+		loop:true,
+		autoplay:true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		nav:true,
+		dots: true,	
+		margin:20,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		responsive:{
+			0:{
+				items:1,
+				margin:10,
+			},
+			640:{
+				items:1,
+				margin:15,
+			},			
+			767:{
+				items:1,
+				margin:20,
+     		},				
+			991:{
+				items:1,
+				margin:20,
+			},
+			1366:{
+				items:1,
+				margin:25,
+			},			
+			1400:{
+				items:1,
+				margin:25,
 			}		
 		}
 	});
@@ -1243,6 +1331,53 @@ $.fn.owlFilter = function(data, callback) {
 		jQuery('body').append($button);
 	}
 
+	// > Modern Team Card Navigation handler ========================= //
+	function modern_team_card_navigation() {
+		var cards = document.querySelectorAll('.modern-team-card-link[data-link]');
+		if (!cards.length) {
+			return;
+		}
+
+		cards.forEach(function (card) {
+			var destination = card.getAttribute('data-link');
+			if (!destination) {
+				return;
+			}
+
+			card.setAttribute('role', 'link');
+			if (!card.hasAttribute('tabindex')) {
+				card.setAttribute('tabindex', '0');
+			}
+
+			card.addEventListener('click', function (event) {
+				if (event.target.closest && event.target.closest('.team-social-center a')) {
+					return;
+				}
+				window.location.href = destination;
+			});
+
+			card.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter' || event.key === ' ') {
+					if (event.target.closest && event.target.closest('.team-social-center a')) {
+						return;
+					}
+					event.preventDefault();
+					window.location.href = destination;
+				}
+			});
+		});
+
+		var socialLinks = document.querySelectorAll('.team-social-center a');
+		socialLinks.forEach(function (link) {
+			link.addEventListener('click', function (event) {
+				event.stopPropagation();
+			});
+			link.addEventListener('keydown', function (event) {
+				event.stopPropagation();
+			});
+		});
+	}
+
 /*--------------------------------------------------------------------------------------------
     Window on scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
@@ -1307,6 +1442,12 @@ $.fn.owlFilter = function(data, callback) {
 	    how_we_work(),	
         // Home page Project Slider function by = owl.carousel.js ========================== //
         project_1_slider(),
+        // Modern Recent Work Slider function by = owl.carousel.js ========================== //
+        modern_recent_work_slider(),
+        // Modern Testimonial Carousel function by = owl.carousel.js ========================== //
+        modern_testimonial_carousel(),
+        // Modern team card navigation handler
+        modern_team_card_navigation(),
         // featured products Slider function by = owl.carousel.js ========================== //
 	    featured_products(),
 		// Home page Project gallery 1 function by = owl.carousel.js ========================== //
