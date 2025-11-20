@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -299,7 +299,7 @@
                             <div class="cleanroom-founder-text">
                                 <span class="cleanroom-eyebrow">Leadership</span>
                                 <h3>Founded by Madhu S</h3>
-                                <p>MSV Group is steered by founder <strong>Madhu S</strong>, whose two decades in cleanroom engineering inform every turnkey engagementâ€"from the first feasibility sketch to sustained compliance in live facilities.</p>
+                                <p>MSV Group is steered by founder <strong>Madhu S</strong>, whose two decades in cleanroom engineering inform every turnkey engagementï¿½"from the first feasibility sketch to sustained compliance in live facilities.</p>
                                 <p class="m-b0">His hands-on approach ensures each project benefits from deep technical rigour, tight vendor coordination and responsive support for regulated environments.</p>
                             </div>
                             <div class="cleanroom-founder-meta">
@@ -525,95 +525,29 @@
     <script  src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
     <script  src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
     <script  src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
-    <script  src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-    <script  src="js/custom.js?v=20251112"></script><!-- CUSTOM FUCTIONS  -->
-    <script  src="js/apple-header.js?v=20251112"></script><!-- APPLE HEADER FUNCTIONS  -->
-    <script  src="js/lc_lightbox.lite.js" ></script><!-- IMAGE POPUP -->
-    <script  src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
-    
-    <!-- Initialize Lightbox -->
+   
+    <!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
     <script>
-        jQuery(document).ready(function($) {
-            lc_lightbox('.lc_lightbox', {
-                wrap_class: 'lcl_fade_oc',
-                gallery: true,
-                thumb_attr: 'data-lcl-thumb',
-                slideshow_time: 3000,
-                skin: 'minimal'
-            });
-        });
-    </script>
-    
-    <!-- Product Gallery Carousel Initialization -->
-    <script>
-        jQuery(document).ready(function($) {
-            $('.product-gallery-carousel').owlCarousel({
-                loop: true,
-                margin: 15,
-                nav: true,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    768: {
-                        items: 3
-                    },
-                    992: {
-                        items: 4
-                    }
-                },
-                navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>']
-            });
-        });
-    </script>
-    
-    <!-- STYLE SWITCHER  ======= --> 
-    <div class="styleswitcher">
-    
-        <div class="switcher-btn-bx">
-            <a class="switch-btn">
-                <span class="fa fa-cog fa-spin"></span>
-            </a>
-        </div>
-        
-        <div class="styleswitcher-inner">
-        
-            <h6 class="switcher-title">Color Skin</h6>
-            <ul class="color-skins">
-                <li><a class="theme-skin skin-1" href="?theme=css/skin/skin-1"></a></li>
-                <li><a class="theme-skin skin-2" href="?theme=css/skin/skin-2"></a></li>
-                <li><a class="theme-skin skin-3" href="?theme=css/skin/skin-3"></a></li>
-                <li><a class="theme-skin skin-4" href="?theme=css/skin/skin-4"></a></li>
-                <li><a class="theme-skin skin-5" href="?theme=css/skin/skin-5"></a></li>
-                <li><a class="theme-skin skin-6" href="?theme=css/skin/skin-6"></a></li>
-                <li><a class="theme-skin skin-7" href="?theme=css/skin/skin-7"></a></li>
-                <li><a class="theme-skin skin-8" href="?theme=css/skin/skin-8"></a></li>
-                <li><a class="theme-skin skin-9" href="?theme=css/skin/skin-9"></a></li>
-                <li><a class="theme-skin skin-10" href="?theme=css/skin/skin-10"></a></li>
-                <li><a class="theme-skin skin-11" href="?theme=css/skin/skin-11"></a></li>
-                <li><a class="theme-skin skin-12" href="?theme=css/skin/skin-12"></a></li>
-            </ul>           
+        // Immediate fallback to hide loading screen
+        (function() {
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', hideLoader);
+            } else {
+                hideLoader();
+            }
             
-        </div>    
-    </div>
-    <!-- STYLE SWITCHER END ==== -->
-    
-    
-    
-    
-</body>
+            window.addEventListener('load', hideLoader);
+            
+            // Force hide after 3 seconds
+            setTimeout(hideLoader, 3000);
+            
+            function hideLoader() {
+                var loader = document.querySelector('.loading-area');
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+            }
+        })();
+    </script>
 
-</html>
-
-
-
-
-
-
+     <script  src="js/jquery

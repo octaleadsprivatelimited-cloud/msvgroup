@@ -317,8 +317,7 @@
                                                         <div class="icon-content">
                                                             <h3 class="m-t0 site-text-primary">Opening Hours</h3>
                                                             <ul class="list-unstyled m-b0">
-                                                              <li>Monday - Saturday: 8 AM â€“ 6 PM</li>
-                                                              <li>Sunday: Closed</li>
+                                                              <li>Monday - Sunday: 8 AM – 6 PM</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -656,6 +655,30 @@
     </div>
 </div>
 <!-- LOADING AREA  END ====== -->
+
+<!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
+<script>
+	// Immediate fallback to hide loading screen
+	(function() {
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', hideLoader);
+		} else {
+			hideLoader();
+		}
+		
+		window.addEventListener('load', hideLoader);
+		
+		// Force hide after 3 seconds
+		setTimeout(hideLoader, 3000);
+		
+		function hideLoader() {
+			var loader = document.querySelector('.loading-area');
+			if (loader) {
+				loader.style.display = 'none';
+			}
+		}
+	})();
+</script>
 
 <!-- JAVASCRIPT  FILES ========================================= --> 
 <script  src="js/jquery-2.2.0.min.js"></script><!-- JQUERY.MIN JS -->

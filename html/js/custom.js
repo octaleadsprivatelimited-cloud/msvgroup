@@ -1292,7 +1292,7 @@ $.fn.owlFilter = function(data, callback) {
 
 // > page loader function by = custom.js ========================= //		
 	function page_loader() {
-		$('.loading-area').fadeOut(1000);
+		jQuery('.loading-area').fadeOut(1000);
 	}
 
 // > WhatsApp floating button initializer ========================= //
@@ -1497,7 +1497,7 @@ $.fn.owlFilter = function(data, callback) {
 		//  MAKE AN APPOINTMENT Section function by = counterup.min.js
 		contact_slide(),
 		// > WhatsApp floating button initializer ========================= //
-		init_whatsapp_floating_button();
+		// init_whatsapp_floating_button(); // Disabled - Green WhatsApp button hidden
 				
 	}); 	
 
@@ -1513,7 +1513,27 @@ $.fn.owlFilter = function(data, callback) {
 		bg_image_stellar(),
 		// > page loader function by = custom.js		
 		page_loader();
-});
+	});
+	
+	// Fallback: Ensure loading screen hides even if window load event doesn't fire
+	jQuery(document).ready(function() {
+		// Immediate fallback after 2 seconds
+		setTimeout(function() {
+			jQuery('.loading-area').fadeOut(500);
+		}, 2000);
+		
+		// Additional fallback after 5 seconds
+		setTimeout(function() {
+			jQuery('.loading-area').hide();
+		}, 5000);
+	});
+	
+	// Immediate fallback on page ready
+	setTimeout(function() {
+		if (typeof jQuery !== 'undefined' && jQuery('.loading-area').length) {
+			jQuery('.loading-area').fadeOut(500);
+		}
+	}, 2000);
 
  /*===========================
 	Window Scroll ALL FUNCTION START

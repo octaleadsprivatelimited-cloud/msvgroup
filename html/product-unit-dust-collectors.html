@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -341,7 +341,7 @@
                     <div class="cleanroom-founder-text">
                         <span class="cleanroom-eyebrow">Leadership</span>
                         <h3>Founded by Madhu S</h3>
-                        <p>MSV Group is steered by founder <strong>Madhu S</strong>, whose two decades in cleanroom engineering inform every turnkey engagementâ€"from the first feasibility sketch to sustained compliance in live facilities.</p>
+                        <p>MSV Group is steered by founder <strong>Madhu S</strong>, whose two decades in cleanroom engineering inform every turnkey engagementï¿½"from the first feasibility sketch to sustained compliance in live facilities.</p>
                         <p class="m-b0">His hands-on approach ensures each project benefits from deep technical rigour, tight vendor coordination and responsive support for regulated environments.</p>
                     </div>
                     <div class="cleanroom-founder-meta">
@@ -570,6 +570,31 @@
     </div>
 </div>
 <!-- LOADING AREA  END ====== -->
+
+
+<!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
+<script>
+	// Immediate fallback to hide loading screen
+	(function() {
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', hideLoader);
+		} else {
+			hideLoader();
+		}
+		
+		window.addEventListener('load', hideLoader);
+		
+		// Force hide after 3 seconds
+		setTimeout(hideLoader, 3000);
+		
+		function hideLoader() {
+			var loader = document.querySelector('.loading-area');
+			if (loader) {
+				loader.style.display = 'none';
+			}
+		}
+	})();
+</script>
 
 <!-- JAVASCRIPT  FILES ========================================= --> 
 <script  src="js/jquery-2.2.0.min.js"></script><!-- JQUERY.MIN JS -->

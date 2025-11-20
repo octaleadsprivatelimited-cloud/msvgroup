@@ -7,6 +7,8 @@
     <link rel="icon" href="media/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/apple-header.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body class="header-style-2">
     <div class="page-wraper">
@@ -118,7 +120,82 @@
                 </div>
             </div>
         </div>
+        
+        <!-- FLOATING CONTACT BUTTONS START -->
+        <div class="floating-contact-buttons">
+            <!-- Enquire Button -->
+            <a href="contact-1.html" class="floating-btn floating-btn-enquire" title="Enquire">
+                <i class="fa fa-envelope"></i>
+                <span class="floating-btn-text">Enquire</span>
+                <div class="floating-btn-tooltip">
+                    <div class="tooltip-content">
+                        <strong>Email Us</strong>
+                        <p>msvyoungindia@gmail.com</p>
+                        <p>ceo@msvyoungindia.com</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Call Us Button -->
+            <a href="tel:+919985008106" class="floating-btn floating-btn-call" title="Call Us">
+                <i class="fa fa-phone"></i>
+                <span class="floating-btn-text">Call Us</span>
+                <div class="floating-btn-tooltip">
+                    <div class="tooltip-content">
+                        <strong>Call Us</strong>
+                        <p>+91 99850 08106</p>
+                        <p>+91 97046 23824</p>
+                        <p>+91 88850 90666</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/919985008106" target="_blank" class="floating-btn floating-btn-whatsapp" title="WhatsApp">
+                <i class="fa fa-whatsapp"></i>
+                <span class="floating-btn-text">WhatsApp</span>
+                <div class="floating-btn-tooltip">
+                    <div class="tooltip-content">
+                        <strong>WhatsApp Us</strong>
+                        <p>+91 99850 08106</p>
+                        <p>Click to chat</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Scroll to Top Button -->
+            <button class="floating-btn floating-btn-top scroltop" title="Scroll to Top">
+                <i class="fa fa-angle-up"></i>
+                <span class="floating-btn-text">Top</span>
+            </button>
+        </div>
+        <!-- FLOATING CONTACT BUTTONS END -->
     </div>
+    
+    <!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
+    <script>
+        // Immediate fallback to hide loading screen
+        (function() {
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', hideLoader);
+            } else {
+                hideLoader();
+            }
+            
+            window.addEventListener('load', hideLoader);
+            
+            // Force hide after 3 seconds
+            setTimeout(hideLoader, 3000);
+            
+            function hideLoader() {
+                var loader = document.querySelector('.loading-area');
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+            }
+        })();
+    </script>
+    
     <script src="js/apple-header.js"></script>
 </body>
 </html>

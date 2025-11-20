@@ -73,7 +73,7 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 9px;
     padding: 4px 12px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -741,6 +741,10 @@ body {
     }
     .mobile-contact-item:has(.fa-whatsapp) i {
         background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+    }
+    .mobile-contact-item:has(.fa-whatsapp) a,
+    .mobile-contact-item:has(.fa-whatsapp) span {
+        font-size: 10px;
     }
     
     /* Specific styling for email */

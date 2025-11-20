@@ -153,36 +153,16 @@ YOU CAN WRIGHT CUSTOME CSS
 }
 
 .whatsapp-float {
-    position: fixed;
-    right: 28px;
-    bottom: 28px;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: #25d366;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: none !important;
 }
 
 .whatsapp-float:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    display: none !important;
 }
 
 @media (max-width: 767px) {
     .whatsapp-float {
-        right: 18px;
-        bottom: 18px;
-        width: 46px;
-        height: 46px;
-        font-size: 22px;
+        display: none !important;
     }
 }
 
@@ -6707,35 +6687,36 @@ YOU CAN WRIGHT CUSTOME CSS
     z-index: 998;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     padding: 0;
     margin: 0;
 }
 
 .floating-btn {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
 }
 
 .floating-btn i {
-    font-size: 24px;
-    margin-bottom: 4px;
+    font-size: 18px;
+    margin-bottom: 3px;
 }
 
 .floating-btn-text {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -6768,6 +6749,10 @@ YOU CAN WRIGHT CUSTOME CSS
     transform: translateX(-5px);
 }
 
+.floating-btn-whatsapp .floating-btn-text {
+    font-size: 7px;
+}
+
 .floating-btn-top {
     background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
 }
@@ -6780,7 +6765,7 @@ YOU CAN WRIGHT CUSTOME CSS
 /* Tooltip Styles */
 .floating-btn-tooltip {
     position: absolute;
-    right: 70px;
+    right: 55px;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
@@ -6793,7 +6778,7 @@ YOU CAN WRIGHT CUSTOME CSS
 .floating-btn:hover .floating-btn-tooltip {
     opacity: 1;
     visibility: visible;
-    right: 75px;
+    right: 60px;
 }
 
 .tooltip-content {
@@ -6841,17 +6826,17 @@ YOU CAN WRIGHT CUSTOME CSS
         top: auto;
         bottom: 20px;
         transform: none;
-        gap: 10px;
+        gap: 8px;
     }
     
     .floating-btn {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
     }
     
     .floating-btn i {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 0;
     }
     
