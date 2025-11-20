@@ -1297,7 +1297,7 @@ $.fn.owlFilter = function(data, callback) {
 
 // > WhatsApp floating button initializer ========================= //
 	function init_whatsapp_floating_button() {
-		var whatsappNumber = '918885090666';
+		var whatsappNumber = '919985008106';
 		var whatsappSelector = '.whatsapp-float';
 		var whatsappHref = 'https://wa.me/' + whatsappNumber;
 
