@@ -6837,24 +6837,30 @@ YOU CAN WRIGHT CUSTOME CSS
 /* Responsive Styles */
 @media (max-width: 768px) {
     .floating-contact-buttons {
-        right: -50px;
+        right: 10px;
+        top: auto;
+        bottom: 20px;
+        transform: none;
+        gap: 10px;
     }
     
     .floating-btn {
         width: 50px;
         height: 50px;
+        border-radius: 50%;
     }
     
     .floating-btn i {
         font-size: 20px;
+        margin-bottom: 0;
     }
     
     .floating-btn-text {
-        font-size: 8px;
+        display: none;
     }
     
     .floating-btn:hover {
-        transform: translateX(-10px);
+        transform: translateX(-5px);
     }
     
     .floating-btn-tooltip {
