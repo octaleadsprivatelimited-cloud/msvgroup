@@ -325,11 +325,12 @@
         </div>
         <!-- CONTENT END -->
         
-                
+        
+        
         <!-- FLOATING CONTACT BUTTONS START -->
         <div class="floating-contact-buttons">
             <!-- Enquire Button -->
-            <a href="contact-1.html" class="floating-btn floating-btn-enquire" title="Enquire">
+            <a href="mailto:msvyoungindia@gmail.com" class="floating-btn floating-btn-enquire" title="Enquire">
                 <i class="fa fa-envelope"></i>
                 <span class="floating-btn-text">Enquire</span>
                 <div class="floating-btn-tooltip">
@@ -525,6 +526,11 @@
     <script  src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
     <script  src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
     <script  src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+    <script  src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
+    <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script  src="js/apple-header.js"></script><!-- APPLE HEADER FUNCTIONS  -->
+    <script  src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
+    <script  src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  -->
    
     <!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
     <script>
@@ -549,5 +555,54 @@
             }
         })();
     </script>
+    
+    <!-- Initialize Lightbox -->
+    <script>
+        jQuery(document).ready(function($) {
+            if (typeof lc_lightbox !== 'undefined') {
+                lc_lightbox('.lc_lightbox', {
+                    wrap_class: 'lcl_fade_oc',
+                    gallery: true,
+                    thumb_attr: 'data-lcl-thumb',
+                    slideshow_time: 3000,
+                    skin: 'minimal'
+                });
+            }
+        });
+    </script>
+    
+    <!-- Product Gallery Carousel Initialization -->
+    <script>
+        jQuery(document).ready(function($) {
+            if ($.fn.owlCarousel) {
+                $('.product-gallery-carousel').owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    nav: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        992: {
+                            items: 3
+                        }
+                    },
+                    navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>']
+                });
+            }
+        });
+    </script>
 
-     <script  src="js/jquery
+</body>
+
+</html>

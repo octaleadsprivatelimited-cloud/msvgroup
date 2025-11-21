@@ -1445,7 +1445,7 @@ $.fn.owlFilter = function(data, callback) {
         // Modern Recent Work Slider function by = owl.carousel.js ========================== //
         modern_recent_work_slider(),
         // Modern Testimonial Carousel function by = owl.carousel.js ========================== //
-        modern_testimonial_carousel(),
+        // modern_testimonial_carousel(), // Commented out - testimonials carousel removed
         // Modern team card navigation handler
         modern_team_card_navigation(),
         // featured products Slider function by = owl.carousel.js ========================== //
