@@ -3466,11 +3466,19 @@ YOU CAN WRIGHT CUSTOME CSS
     display: inline-block;
 }
 
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .counter-suffix {
-    display: inline-block;
+    display: block;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
+    margin-top: -10px;
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
