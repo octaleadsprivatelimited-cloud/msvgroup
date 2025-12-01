@@ -2,6 +2,36 @@
 YOU CAN WRIGHT CUSTOME CSS 
 ======================================*/
 
+/* Outfit Font - Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Font Family - Outfit (excluding Font Awesome icons) */
+body, 
+*:not(.fa):not([class*="fa-"]):not(.flaticon):not([class*="flaticon-"]) {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Ensure Font Awesome icons use FontAwesome font */
+.fa, 
+[class^="fa-"], 
+[class*=" fa-"],
+i[class*="fa"],
+i.fa,
+[class*="fa-"] {
+    font-family: 'FontAwesome' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure Flaticon icons use Flaticon font */
+.flaticon,
+[class^="flaticon-"],
+[class*=" flaticon-"] {
+    font-family: 'Flaticon' !important;
+}
+
 /* Logo Size Reduction - 50% smaller */
 .logo-footer img {
     max-width: 50% !important;
