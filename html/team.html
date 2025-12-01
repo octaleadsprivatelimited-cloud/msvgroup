@@ -41,7 +41,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- CUSTOM STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <!-- FLATICON STYLE SHEET -->
+    <!-- APPLE HEADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/apple-header.css">
+    <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">  
     
     <!-- IMAGE POPUP -->
@@ -64,71 +66,101 @@
 
 <body>
 
-    <div class="page-wraper"> 
-        <!-- HEADER START -->
-        <header class="site-header header-style-2">
-            <div class="header-middle">
-                <div class="container d-flex align-items-center justify-content-between">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="media/images/logo.png" alt="MSV Group India" />
-                        </a>
-                    </div>
-                    <nav class="desktop-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Who We Are</a></li>
-                            <li>
-                                <a href="javascript:void(0);">Products</a>
-                                <ul class="sub-menu">
-                                    <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
-                                    <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
-                                    <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions & Cealing Partitions</a></li>
-                                    <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors & Wooden Doors)</a></li>
-                                    <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
-                                    <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
-                                    <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre & Fine Filters</a></li>
-                                    <li><a href="product-vinyl-epoxy-flooring.html">Vinyl & Epoxy Flooring</a></li>
-                                    <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
-                                    <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact-1.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="mobile-overlay"></div>
-                    <nav class="mobile-nav">
-                        <button class="mobile-close" type="button"></button>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Who We Are</a></li>
-                            <li class="has-submenu">
-                                <a href="javascript:void(0);">Products</a>
-                                <ul class="sub-menu">
-                                    <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
-                                    <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
-                                    <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions & Cealing Partitions</a></li>
-                                    <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors & Wooden Doors)</a></li>
-                                    <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
-                                    <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
-                                    <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre & Fine Filters</a></li>
-                                    <li><a href="product-vinyl-epoxy-flooring.html">Vinyl & Epoxy Flooring</a></li>
-                                    <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
-                                    <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact-1.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <!-- TOP CONTACT BAR -->
+    <div class="top-contact-bar">
+        <div class="top-contact-container">
+            <div class="top-contact-left">
+                <span class="contact-item"><i class="fa fa-phone"></i> +91 99850 08106</span>
+                <span class="contact-item"><i class="fa fa-envelope"></i> info@msvgroupindia.com</span>
+                <span class="contact-item"><i class="fa fa-map-marker"></i> Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</span>
             </div>
-        </header>
-        <!-- HEADER END -->
-    
+            <div class="top-contact-right">
+                <a href="https://wa.me/918885090666" target="_blank" class="whatsapp-link"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLE.COM STYLE HEADER -->
+    <header class="apple-header">
+        <div class="header-container">
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" type="button">
+                <span class="icon-bar icon-bar-first"></span>
+                <span class="icon-bar icon-bar-two"></span>
+                <span class="icon-bar icon-bar-three"></span>
+            </button>
+            
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/images/logo.png" alt="MSV Group India" />
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li>
+                        <a href="javascript:void(0);">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
+                            <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
+                            <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions &amp; Cealing Partitions</a></li>
+                            <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors &amp; Wooden Doors)</a></li>
+                            <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
+                            <li><a href="product-pass-box.html">Pass Boxes</a></li>
+                            <li><a href="product-ahu.html">Air Handling Units (AHU)</a></li>
+                            <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
+                            <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre &amp; Fine Filters</a></li>
+                            <li><a href="product-vinyl-epoxy-flooring.html">Vinyl &amp; Epoxy Flooring</a></li>
+                            <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
+                            <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Overlay -->
+            <div class="mobile-overlay"></div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <button class="mobile-close" type="button"></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0);">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
+                            <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
+                            <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions &amp; Cealing Partitions</a></li>
+                            <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors &amp; Wooden Doors)</a></li>
+                            <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
+                            <li><a href="product-pass-box.html">Pass Boxes</a></li>
+                            <li><a href="product-ahu.html">Air Handling Units (AHU)</a></li>
+                            <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
+                            <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre &amp; Fine Filters</a></li>
+                            <li><a href="product-vinyl-epoxy-flooring.html">Vinyl &amp; Epoxy Flooring</a></li>
+                            <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
+                            <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wraper"> 
+
         <!-- CONTENT START -->
         <div class="page-content">
         
@@ -149,223 +181,185 @@
             </div>
             <!-- INNER PAGE BANNER END -->
 
-            <!-- OUR TEAM START -->
-            <div class="section-full p-t80 p-b50 bg-white team-bg-section-outer">
-            	<div class="team-bg-map site-bg-secondry bg-repeat-x" style="background-image:url(media/images/background/bg-map2.png)"></div>
+            <!-- MODERN LEADERSHIP TEAM (SYNCED WITH ABOUT PAGE) -->
+            <div class="section-full p-t40 p-b40 modern-team-section">
                 <div class="container">
                     <div class="section-content">
-                    
-                    
-                               
-                    <div class="section-content">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-3 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <!-- Image removed -->
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>                                              
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30  p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-white">Varma. Badampudi</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Production Director</span>
-                                        </div>
-                                    </div>
-                            
+                        <!-- MODERN TEAM HEADER START-->
+                        <div class="modern-team-header text-center">
+                            <div class="modern-separator-wrapper-team">
+                                <div class="wt-small-separator site-text-primary modern-separator-team">
+                                    <div class="sep-leaf-left modern-leaf-team"></div>
+                                    <div class="separator-text-team">Our Expert Team</div>
+                                    <div class="sep-leaf-right modern-leaf-team"></div>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-3 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <img src="media/images/msv group/msv00007.jpeg" alt="">
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30  p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-white">Malleswara Rao Vasa</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Manager- Projects</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <!-- Image removed -->
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30 p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-white">Madhu S</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Managing Director & CEO</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div> 
-                            
-                            <div class="col-lg-3 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <img src="media/images/msv group/msv00007.jpeg" alt="">
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30  p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-white">Venkat Reddy k</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">CTO</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div>                                                                                   
-                            
+                            <h2 class="modern-team-title">Meet Our Leadership</h2>
+                            <p class="modern-team-description">Dedicated professionals driving innovation and excellence in cleanroom solutions</p>
                         </div>
-                    </div>      
-                        
+                        <!-- MODERN TEAM HEADER END-->
+
+                        <div class="row justify-content-center modern-team-cards">
+                            <!-- Madhu Sutari -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b20">
+                                <div class="modern-team-card-link" data-link="team-madhu-s.html">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Madhu.jpeg" alt="Madhu Sutari" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name"><a href="team-madhu-s.html">Madhu Sutari</a></h3>
+                                                <span class="modern-team-position">Managing Director &amp; CEO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Subbarao Sutari -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="modern-team-card-link">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Subbarao_Sutari.jpeg" alt="Subbarao Sutari" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name">Subbarao Sutari</h3>
+                                                <span class="modern-team-position">Executive Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Venkat Reddy k -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="modern-team-card-link" data-link="team-venkat-reddy.html">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Venkat Reddy k.jpeg" alt="Venkat Reddy k" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name"><a href="team-venkat-reddy.html">Venkat Reddy k</a></h3>
+                                                <span class="modern-team-position">CTO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Varma. Badampudi -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="modern-team-card-link" data-link="team-varma-badampudi.html">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Varma. Badampudi.jpeg" alt="Varma. Badampudi" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name"><a href="team-varma-badampudi.html">Varma. Badampudi</a></h3>
+                                                <span class="modern-team-position">Production Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Malleswara Rao Vasa -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="modern-team-card-link" data-link="team-malleswara-rao.html">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Malleswara Rao Vasa.jpeg" alt="Malleswara Rao Vasa" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name"><a href="team-malleswara-rao.html">Malleswara Rao Vasa</a></h3>
+                                                <span class="modern-team-position">Manager- Projects</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Siva Kumar Tumu -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="modern-team-card-link">
+                                    <div class="modern-team-card">
+                                        <div class="modern-team-card-inner">
+                                            <div class="modern-team-image-wrapper">
+                                                <img src="media/images/gallery/team/Siva_Kumar_Tumu.jpeg" alt="Siva Kumar Tumu" class="modern-team-image">
+                                                <div class="modern-team-image-overlay"></div>
+                                                <div class="team-social-center">
+                                                    <ul class="team-social-bar">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modern-team-content">
+                                                <h3 class="modern-team-name">Siva Kumar Tumu</h3>
+                                                <span class="modern-team-position">Production Head</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>   
-            <!-- OUR TEAM SECTION END -->  
-            
-            <!-- OUR TEAM START -->
-            <div class="section-full p-t80 p-b50 bg-white team-bg-section-outer bg-no-repeat bg-center" style="background-image:url(media/images/background/bg-map.png)">
-                <div class="container">
-                    <div class="section-content">
-                    
-                    
-                               
-                    <div class="section-content">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <img src="media/images/msv group/msv00006.jpeg" alt="">
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>                                              
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30  p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-secondry">Varma. Badampudi</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Production Director</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <img src="media/images/msv group/msv00007.jpeg" alt="">
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>
-                                    </div>                                   
-
-
-                                    <div class="wt-info p-a30  p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-secondry">Malleswara Rao Vasa</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Manager- Projects</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
-                                <div class="wt-team-1">
-                                    
-                                    <div class="wt-media">
-                                        <img src="media/images/msv group/msv00008.jpeg" alt="">
-                                        <div class="team-social-center">
-                                            <ul class="team-social-bar">
-                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                            
-                                        </div>
-                                    </div>                                   
-
-                                    <div class="wt-info p-a30 p-b0">
-                                        <div class="team-detail  text-center">
-                                            <h3 class="m-t0 team-name"><span class=" site-text-secondry">Madhu S</span></h3>
-                                            <span class="title-style-2 team-position site-text-primary">Managing Director & CEO</span>
-                                        </div>
-                                    </div>
-                            
-                                </div>
-                            </div>                                                        
-                            
-                        </div>
-                    </div>      
-                        
-                    </div>
-                </div>
-            </div>   
-            <!-- OUR TEAM SECTION END -->                                                                    
+            </div>
+            <!-- MODERN LEADERSHIP TEAM END -->
             
         </div>
         <!-- CONTENT END -->
@@ -374,14 +368,13 @@
         <!-- FLOATING CONTACT BUTTONS START -->
         <div class="floating-contact-buttons">
             <!-- Enquire Button -->
-            <a href="mailto:msvyoungindia@gmail.com" class="floating-btn floating-btn-enquire" title="Enquire">
+            <a href="mailto:info@msvgroupindia.com" class="floating-btn floating-btn-enquire" title="Enquire">
                 <i class="fa fa-envelope"></i>
                 <span class="floating-btn-text">Enquire</span>
                 <div class="floating-btn-tooltip">
                     <div class="tooltip-content">
                         <strong>Email Us</strong>
-                        <p>msvyoungindia@gmail.com</p>
-                        <p>ceo@msvyoungindia.com</p>
+                        <p>info@msvgroupindia.com</p>
                     </div>
                 </div>
             </a>
@@ -494,7 +487,7 @@
                                         </div>
                                         <div class="modern-contact-detail-content">
                                             <strong>Address</strong>
-                                            <p>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
+                                            <p>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
                                         </div>
                                     </div>
                                     <div class="modern-contact-detail-item">
@@ -503,8 +496,7 @@
                                         </div>
                                         <div class="modern-contact-detail-content">
                                             <strong>Email</strong>
-                                            <p><a href="mailto:msvyoungindia@gmail.com">msvyoungindia@gmail.com</a></p>
-                                            <p><a href="mailto:ceo@msvyoungindia.com">ceo@msvyoungindia.com</a></p>
+                                            <p><a href="mailto:info@msvgroupindia.com">info@msvgroupindia.com</a></p>
                                         </div>
                                     </div>
                                     <div class="modern-contact-detail-item">
@@ -621,7 +613,7 @@
                                                 <div class="wt-icon-box-wraper left icon-shake-outer">
                                                     <div class="icon-content">
                                                         <h4 class="m-t0">Email address</h4>
-                                                        <p>Info@msvgroupindia.com</p>
+                                                        <p>info@msvgroupindia.com</p>
                                                         <p></p>
                                                     </div>
                                                 </div>
@@ -630,7 +622,7 @@
                                                 <div class="wt-icon-box-wraper left icon-shake-outer">
                                                     <div class="icon-content">
                                                         <h4 class="m-t0">Address info</h4>
-                                                        <p>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
+                                                        <p>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
                                                     </div>
                                                 </div>
                                             </div>

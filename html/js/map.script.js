@@ -22,7 +22,7 @@
 			marker2.setDraggable(true);		
 			// marker on click show infowindow
 			infowindow2 = new google.maps.InfoWindow({
-				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
+				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
 			});
 			google.maps.event.addListener(marker2, 'click', function() {
 				infowindow2.open(map2, marker2);
@@ -55,7 +55,7 @@
 			// marker on click show infowindow
 
 			infowindow4 = new google.maps.InfoWindow({
-				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
+				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
 			});
 
 			google.maps.event.addListener(marker4, 'click', function() {
@@ -89,7 +89,7 @@
 			// marker on click show infowindow
 
 			infowindow6 = new google.maps.InfoWindow({
-				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
+				content: '<strong>MSV Young Entrepreneurs India Pvt. Ltd.</strong><br>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014<br>'
 			});
 
 			google.maps.event.addListener(marker6, 'click', function() {

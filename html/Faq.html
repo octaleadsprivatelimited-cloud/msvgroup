@@ -41,7 +41,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- CUSTOM STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <!-- FLATICON STYLE SHEET -->
+    <!-- APPLE HEADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/apple-header.css">
+    <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">  
     
     <!-- IMAGE POPUP -->
@@ -64,70 +66,100 @@
 
 <body>
 
-    <div class="page-wraper"> 
-        <!-- HEADER START -->
-        <header class="site-header header-style-2">
-            <div class="header-middle">
-                <div class="container d-flex align-items-center justify-content-between">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="media/images/logo.png" alt="MSV Group India" />
-                        </a>
-                    </div>
-                    <nav class="desktop-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Who We Are</a></li>
-                            <li>
-                                <a href="javascript:void(0);">Products</a>
-                                <ul class="sub-menu">
-                                    <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
-                                    <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
-                                    <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions & Cealing Partitions</a></li>
-                                    <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors & Wooden Doors)</a></li>
-                                    <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
-                                    <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
-                                    <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre & Fine Filters</a></li>
-                                    <li><a href="product-vinyl-epoxy-flooring.html">Vinyl & Epoxy Flooring</a></li>
-                                    <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
-                                    <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact-1.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="mobile-overlay"></div>
-                    <nav class="mobile-nav">
-                        <button class="mobile-close" type="button"></button>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Who We Are</a></li>
-                            <li class="has-submenu">
-                                <a href="javascript:void(0);">Products</a>
-                                <ul class="sub-menu">
-                                    <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
-                                    <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
-                                    <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions & Cealing Partitions</a></li>
-                                    <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors & Wooden Doors)</a></li>
-                                    <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
-                                    <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
-                                    <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre & Fine Filters</a></li>
-                                    <li><a href="product-vinyl-epoxy-flooring.html">Vinyl & Epoxy Flooring</a></li>
-                                    <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
-                                    <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact-1.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <!-- TOP CONTACT BAR -->
+    <div class="top-contact-bar">
+        <div class="top-contact-container">
+            <div class="top-contact-left">
+                <span class="contact-item"><i class="fa fa-phone"></i> +91 99850 08106</span>
+                <span class="contact-item"><i class="fa fa-envelope"></i> info@msvgroupindia.com</span>
+                <span class="contact-item"><i class="fa fa-map-marker"></i> Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</span>
             </div>
-        </header>
-        <!-- HEADER END -->
+            <div class="top-contact-right">
+                <a href="https://wa.me/918885090666" target="_blank" class="whatsapp-link"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPLE.COM STYLE HEADER -->
+    <header class="apple-header">
+        <div class="header-container">
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" type="button">
+                <span class="icon-bar icon-bar-first"></span>
+                <span class="icon-bar icon-bar-two"></span>
+                <span class="icon-bar icon-bar-three"></span>
+            </button>
+            
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/images/logo.png" alt="MSV Group India" />
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li>
+                        <a href="javascript:void(0);">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
+                            <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
+                            <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions &amp; Cealing Partitions</a></li>
+                            <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors &amp; Wooden Doors)</a></li>
+                            <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
+                            <li><a href="product-pass-box.html">Pass Boxes</a></li>
+                            <li><a href="product-ahu.html">Air Handling Units (AHU)</a></li>
+                            <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
+                            <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre &amp; Fine Filters</a></li>
+                            <li><a href="product-vinyl-epoxy-flooring.html">Vinyl &amp; Epoxy Flooring</a></li>
+                            <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
+                            <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Overlay -->
+            <div class="mobile-overlay"></div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <button class="mobile-close" type="button"></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0);">Products</a>
+                        <ul class="sub-menu">
+                            <li><a href="product-clean-room-project-design-and-execution.html">Clean Room Project Design and execution</a></li>
+                            <li><a href="product-isolation-chambers.html">Isolation Chambers</a></li>
+                            <li><a href="product-wall-partitions-cealing-partitions.html">Wall Partitions &amp; Cealing Partitions</a></li>
+                            <li><a href="product-doors-clean-room-doors-wooden-doors.html">Doors (Clean Room Doors &amp; Wooden Doors)</a></li>
+                            <li><a href="product-laminar-air-flow-systems.html">Laminar Air Flow Systems</a></li>
+                            <li><a href="product-pass-box.html">Pass Boxes</a></li>
+                            <li><a href="product-ahu.html">Air Handling Units (AHU)</a></li>
+                            <li><a href="product-unit-dust-collectors.html">Unit Dust Collectors</a></li>
+                            <li><a href="product-hepa-filters-pre-fine-filters.html">Hepa Filters, Pre &amp; Fine Filters</a></li>
+                            <li><a href="product-vinyl-epoxy-flooring.html">Vinyl &amp; Epoxy Flooring</a></li>
+                            <li><a href="product-bed-head-panels.html">Bed Head Panels</a></li>
+                            <li><a href="product-hospital-ot-icu-designs.html">Hospital OT and ICU Designs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wraper"> 
     
         <!-- CONTENT START -->
         <div class="page-content">
@@ -188,7 +220,8 @@
                                             </div>
                                         </div>
                                     </div>                                
-                                
+
+                                    <!-- Cleanroom & Project FAQs -->
                                     <div class="panel wt-panel">
                                         <div class="acod-head">
                                              <h3 class="acod-title">
@@ -204,7 +237,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="panel wt-panel">
                                         <div class="acod-head">
                                              <h3 class="acod-title">
@@ -218,7 +251,7 @@
                                             <div class="acod-content p-a20 bg-gray">We manufacture three main types of steel windows: Casement Windows (traditional opening style), Sliding Windows (space-saving design), and Fixed Windows (maximum light penetration). All our windows are durable, stylish, and energy-efficient, suitable for both residential and commercial applications.</div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="panel wt-panel">
                                         <div class="acod-head">
                                             <h3 class="acod-title">
@@ -232,7 +265,7 @@
                                             <div class="acod-content p-a20 bg-gray">Yes, MSV Group India is ISO 9001:2015 certified. Our manufacturing facilities follow stringent quality management standards, ensuring that every product meets international quality benchmarks. This certification demonstrates our commitment to consistent quality and customer satisfaction.</div>
                                         </div>
                                     </div>
-            
+
                                     <div class="panel wt-panel">
                                         <div class="acod-head">
                                              <h3 class="acod-title">
@@ -246,6 +279,87 @@
                                             <div class="acod-content p-a20 bg-gray">Yes, we have successfully supplied school furniture including dual desks and chalkboards to government schools across Andhra Pradesh. We also provide RO (Reverse Osmosis) water purification systems to educational institutions, ensuring safe drinking water for students.</div>
                                         </div>
                                     </div>
+
+                                    <!-- Company & Engagement FAQs -->
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h3 class="acod-title">
+                                                <a data-toggle="collapse" href="#collapseSix5" class="collapsed" data-parent="#accordion5">
+                                                    Which industries does MSV Group India serve?
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseSix5" class="acod-body collapse">
+                                            <div class="acod-content p-a20 bg-gray">
+                                                <p>We serve pharmaceutical, biotech, vaccine, hospitals, diagnostics, nutraceuticals, micro‑electronics, packaging and other regulated industries that require controlled environments. Our team understands cGMP, NABH and other compliance needs and designs projects accordingly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h3 class="acod-title">
+                                                <a data-toggle="collapse" href="#collapseSeven5" class="collapsed" data-parent="#accordion5">
+                                                    Can you handle turnkey projects from design to validation?
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseSeven5" class="acod-body collapse">
+                                            <div class="acod-content p-a20 bg-gray">
+                                                <p>Yes. MSV Group offers end‑to‑end solutions including layout design, HVAC and cleanroom engineering, paneling, doors, AHUs, pass boxes, LAFs, HEPA filtration, utilities coordination and support during qualification/validation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h3 class="acod-title">
+                                                <a data-toggle="collapse" href="#collapseEight5" class="collapsed" data-parent="#accordion5">
+                                                    Do you manufacture products in‑house?
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseEight5" class="acod-body collapse">
+                                            <div class="acod-content p-a20 bg-gray">
+                                                <p>Most key cleanroom elements are manufactured in‑house at our Hyderabad facility – including PUF panels, metal doors, pass boxes, laminar air flow units, dust collectors, and HEPA &amp; pre‑filters – giving us better quality control and faster delivery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h3 class="acod-title">
+                                                <a data-toggle="collapse" href="#collapseNine5" class="collapsed" data-parent="#accordion5">
+                                                    What information do you need to start a cleanroom proposal?
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseNine5" class="acod-body collapse">
+                                            <div class="acod-content p-a20 bg-gray">
+                                                <p>Typically we request basic layout drawings, process flow, required cleanliness class, regulatory standards to be followed, desired utilities and approximate timelines. Our team can also visit your site to study constraints and suggest an optimized concept.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel wt-panel">
+                                        <div class="acod-head">
+                                            <h3 class="acod-title">
+                                                <a data-toggle="collapse" href="#collapseTen5" class="collapsed" data-parent="#accordion5">
+                                                    Do you provide after‑sales service and maintenance?
+                                                    <span class="indicator"><i class="fa fa-plus"></i></span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseTen5" class="acod-body collapse">
+                                            <div class="acod-content p-a20 bg-gray">
+                                                <p>Yes, we provide comprehensive after‑sales support including AMC options, replacement filters, equipment servicing and on‑site troubleshooting to keep your cleanroom and equipment performing reliably.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                                                         
                                 </div>
                             </div>
@@ -255,25 +369,13 @@
                             	<div class="faq-sidebar">
                                     <div class="service-side-btn m-b30 site-bg-secondry p-a20 text-white">
                                        <h2 class="wt-title">Brochures</h2>
-                                        <p>View our 2020 financial prospectus brochure for an easy to read guide on all of the services offer.</p>
+                                        <p>Download our comprehensive brochure for detailed information about our products and services.</p>
                                         
                                         
-                                        <div class="wt-icon-box-wraper left ">
-                                            <a href="#" class="btn-block  p-a15 m-tb10">
-                                                <span class="text-black m-r10"><i class="fa fa-file-pdf-o"></i></span>
-                                                <strong class="text-uppercase text-black">Download .PDF</strong>
-                                            </a>
-                                        </div>
                                         <div class="wt-icon-box-wraper left">
-                                            <a href="#" class="btn-block  p-a15 m-tb10">
-                                                <span class="text-black m-r10"><i class="fa fa-file-word-o"></i></span>
-                                                <strong class="text-uppercase text-black"> Download .DOC</strong>
-                                            </a>
-                                        </div>
-                                        <div class="wt-icon-box-wraper left">
-                                            <a href="#" class="btn-block p-a15 m-t10">
+                                            <a href="media/brochures/MSV-Brochure-Electronics.pptx" download class="btn-block p-a15 m-tb10">
                                                 <span class="text-black m-r10"><i class="fa fa-file-powerpoint-o"></i></span>
-                                                <strong class="text-uppercase text-black">Download .PPT</strong>
+                                                <strong class="text-uppercase text-black">Download Brochure (.PPTX)</strong>
                                             </a>
                                         </div>                                 
                                     </div> 
@@ -301,14 +403,13 @@
         <!-- FLOATING CONTACT BUTTONS START -->
         <div class="floating-contact-buttons">
             <!-- Enquire Button -->
-            <a href="mailto:msvyoungindia@gmail.com" class="floating-btn floating-btn-enquire" title="Enquire">
+            <a href="mailto:info@msvgroupindia.com" class="floating-btn floating-btn-enquire" title="Enquire">
                 <i class="fa fa-envelope"></i>
                 <span class="floating-btn-text">Enquire</span>
                 <div class="floating-btn-tooltip">
                     <div class="tooltip-content">
                         <strong>Email Us</strong>
-                        <p>msvyoungindia@gmail.com</p>
-                        <p>ceo@msvyoungindia.com</p>
+                        <p>info@msvgroupindia.com</p>
                     </div>
                 </div>
             </a>
@@ -421,7 +522,7 @@
                                         </div>
                                         <div class="modern-contact-detail-content">
                                             <strong>Address</strong>
-                                            <p>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
+                                            <p>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
                                         </div>
                                     </div>
                                     <div class="modern-contact-detail-item">
@@ -430,8 +531,7 @@
                                         </div>
                                         <div class="modern-contact-detail-content">
                                             <strong>Email</strong>
-                                            <p><a href="mailto:msvyoungindia@gmail.com">msvyoungindia@gmail.com</a></p>
-                                            <p><a href="mailto:ceo@msvyoungindia.com">ceo@msvyoungindia.com</a></p>
+                                            <p><a href="mailto:info@msvgroupindia.com">info@msvgroupindia.com</a></p>
                                         </div>
                                     </div>
                                     <div class="modern-contact-detail-item">
@@ -548,7 +648,7 @@
                                                 <div class="wt-icon-box-wraper left icon-shake-outer">
                                                     <div class="icon-content">
                                                         <h4 class="m-t0">Email address</h4>
-                                                        <p>Info@msvgroupindia.com</p>
+                                                        <p>info@msvgroupindia.com</p>
                                                         <p></p>
                                                     </div>
                                                 </div>
@@ -557,7 +657,7 @@
                                                 <div class="wt-icon-box-wraper left icon-shake-outer">
                                                     <div class="icon-content">
                                                         <h4 class="m-t0">Address info</h4>
-                                                        <p>Plot No 6&7, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
+                                                        <p>Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</p>
                                                     </div>
                                                 </div>
                                             </div>

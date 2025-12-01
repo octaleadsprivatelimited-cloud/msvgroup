@@ -7026,3 +7026,30 @@ YOU CAN WRIGHT CUSTOME CSS
         display: none;
     }
 }
+
+/* Contact Form Border Improvements */
+.cons-contact-form .form-control {
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    background-color: #ffffff !important;
+}
+
+.cons-contact-form .form-control:focus {
+    border-color: #3396d1 !important;
+    box-shadow: 0 0 0 3px rgba(51, 150, 209, 0.1) !important;
+    outline: none !important;
+    background-color: #ffffff !important;
+}
+
+.cons-contact-form textarea.form-control {
+    min-height: 120px !important;
+    resize: vertical !important;
+}
+
+.cons-contact-form .form-control::placeholder {
+    color: #999 !important;
+    font-size: 14px !important;
+}
