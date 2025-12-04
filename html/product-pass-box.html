@@ -54,7 +54,7 @@
     <div class="top-contact-bar">
         <div class="top-contact-container">
             <div class="top-contact-left">
-                <span class="contact-item"><i class="fa fa-phone"></i> +91 99850 08106</span>
+                <span class="contact-item"><i class="fa fa-phone"></i> +91 97046 23824</span>
                 <span class="contact-item"><i class="fa fa-envelope"></i> info@msvgroupindia.com</span>
                 <span class="contact-item"><i class="fa fa-map-marker"></i> Plot No 11, New Steel City, IDA Jeedimetla, Medchal District, Telangana State, 500014</span>
             </div>
@@ -169,29 +169,29 @@
                             <div class="product-gallery-carousel owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="gallery-item">
-                                        <a href="media/images/sterile-packaging/sterile-packaging-1.jpeg" data-lcl-txt="Pass Box Installation 1" class="lc_lightbox">
-                                            <img src="media/images/sterile-packaging/sterile-packaging-1.jpeg" alt="Pass Box Installation 1" class="img-fluid">
+                                        <a href="media/images/pass-boxes/pass-boxes.avif" data-lcl-txt="Pass Boxes" class="lc_lightbox">
+                                            <img src="media/images/pass-boxes/pass-boxes.avif" alt="Pass Boxes" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="gallery-item">
-                                        <a href="media/images/sterile-packaging/sterile-packaging-2.jpeg" data-lcl-txt="Pass Box Installation 2" class="lc_lightbox">
-                                            <img src="media/images/sterile-packaging/sterile-packaging-2.jpeg" alt="Pass Box Installation 2" class="img-fluid">
+                                        <a href="media/images/pass-boxes/pass-boxes-1.webp" data-lcl-txt="Pass Boxes 1" class="lc_lightbox">
+                                            <img src="media/images/pass-boxes/pass-boxes-1.webp" alt="Pass Boxes 1" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="gallery-item">
-                                        <a href="media/images/sterile-packaging/sterile-packaging-3.jpeg" data-lcl-txt="Pass Box Installation 3" class="lc_lightbox">
-                                            <img src="media/images/sterile-packaging/sterile-packaging-3.jpeg" alt="Pass Box Installation 3" class="img-fluid">
+                                        <a href="media/images/pass-boxes/pass-boxes-2.webp" data-lcl-txt="Pass Boxes 2" class="lc_lightbox">
+                                            <img src="media/images/pass-boxes/pass-boxes-2.webp" alt="Pass Boxes 2" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="gallery-item">
-                                        <a href="media/images/sterile-packaging/sterile-packaging-4.jpeg" data-lcl-txt="Pass Box Installation 4" class="lc_lightbox">
-                                            <img src="media/images/sterile-packaging/sterile-packaging-4.jpeg" alt="Pass Box Installation 4" class="img-fluid">
+                                        <a href="media/images/pass-boxes/pass-boxes-3.jpg" data-lcl-txt="Pass Boxes 3" class="lc_lightbox">
+                                            <img src="media/images/pass-boxes/pass-boxes-3.jpg" alt="Pass Boxes 3" class="img-fluid">
                                         </a>
                                     </div>
                                 </div>
@@ -327,9 +327,7 @@
                 <div class="floating-btn-tooltip">
                     <div class="tooltip-content">
                         <strong>Call Us</strong>
-                        <p>+91 99850 08106</p>
                         <p>+91 97046 23824</p>
-                        <p>+91 99850 08106</p>
                     </div>
                 </div>
             </a>
@@ -341,7 +339,6 @@
                 <div class="floating-btn-tooltip">
                     <div class="tooltip-content">
                         <strong>WhatsApp Us</strong>
-                        <p>+91 99850 08106</p>
                         <p>Click to chat</p>
                     </div>
                 </div>
@@ -444,9 +441,7 @@
                                         </div>
                                         <div class="modern-contact-detail-content">
                                             <strong>Phone</strong>
-                                            <p><a href="tel:+919985008106">+91 99850 08106</a></p>
                                             <p><a href="tel:+919704623824">+91 97046 23824</a></p>
-                                            <p><a href="tel:+919985008106">+91 99850 08106</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -538,6 +533,36 @@
     <script src="js/custom.js"></script>
     <script src="js/lc_lightbox.lite.js"></script>
     <script src="js/switcher.js"></script>
+    
+    <!-- Product Gallery Carousel Initialization -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('.product-gallery-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    }
+                },
+                navText: ['<span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span>']
+            });
+        });
+    </script>
 </body>
 
 </html>
