@@ -1396,8 +1396,8 @@ i.fa,
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .portfolio-grid{
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 24px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
     }
     .portfolio-filter{
         padding: 8px 18px;
@@ -1455,6 +1455,11 @@ i.fa,
         width: calc(50% - 10px);
         justify-content: center;
         text-align: center;
+    }
+    /* Ensure portfolio grid is 2 columns on small mobile too */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
     }
     .project-card__media img{
         height: 200px;
@@ -6392,6 +6397,19 @@ i.fa,
 .modern-copyright p {
     margin: 0;
     font-size: 14px;
+}
+
+/* Style for Octaleads link in footer */
+.modern-copyright p a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.modern-copyright p a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
     color: #94a3b8;
 }
 
@@ -7090,4 +7108,124 @@ i.fa,
 .cons-contact-form .form-control::placeholder {
     color: #999 !important;
     font-size: 14px !important;
+}
+
+/* Force all cards to display 2 by 2 (2 columns) in mobile view only */
+@media (max-width: 767px) {
+    /* General rule: Override Bootstrap columns - force 2 columns on mobile for all cards with col-sm-12 */
+    .row > [class*="col-"].col-sm-12:not(.no-mobile-2-col),
+    .row [class*="col-"].col-sm-12:not(.no-mobile-2-col) {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+    
+    /* Specific targeting for common card patterns */
+    .row .col-lg-4.col-md-6.col-sm-12:not(.no-mobile-2-col),
+    .row .col-lg-3.col-md-6.col-sm-12:not(.no-mobile-2-col),
+    .row .col-lg-6.col-md-6.col-sm-12:not(.no-mobile-2-col),
+    .row .col-lg-4.col-md-4.col-sm-12:not(.no-mobile-2-col) {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+    
+    /* Modern team cards */
+    .modern-team-cards .col-lg-4.col-md-6.col-sm-12,
+    .modern-team-cards .col-lg-3.col-md-6.col-sm-12,
+    .modern-team-cards > [class*="col-"].col-sm-12 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+    
+    /* Project cards and portfolio grid - Force 2 columns using CSS Grid */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        margin-top: 32px !important;
+        display: grid !important;
+    }
+    
+    .portfolio-grid article,
+    .portfolio-grid .project-card {
+        width: 100% !important;
+        margin: 0 !important;
+        min-width: 0 !important;
+    }
+    
+    /* Ensure project cards have proper alignment */
+    .project-card {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    /* Fix any alignment issues with project card content */
+    .project-card__body {
+        flex: 1 1 auto;
+    }
+    
+    .project-card__media img {
+        width: 100% !important;
+        display: block !important;
+    }
+    
+    /* Team cards wrapper */
+    .wt-team-1,
+    .modern-team-card,
+    .project-card {
+        margin-bottom: 15px;
+    }
+    
+    /* Ensure proper spacing between 2 columns */
+    .row > [class*="col-"]:not(.no-mobile-2-col),
+    .row [class*="col-"]:not(.no-mobile-2-col) {
+        padding-left: 7.5px !important;
+        padding-right: 7.5px !important;
+    }
+    
+    .row {
+        margin-left: -7.5px !important;
+        margin-right: -7.5px !important;
+    }
+    
+    /* Fix for Bootstrap's default gutter */
+    .container-fluid .row,
+    .container .row {
+        margin-left: -7.5px !important;
+        margin-right: -7.5px !important;
+    }
+}
+
+/* Fix team member image head cropping - ensure full image is visible */
+.wt-team-1 .wt-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.wt-team-1 .wt-media img {
+    object-position: center top !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* For individual team pages - ensure head is fully visible and show complete image */
+.section-full .wt-team-1 .wt-media,
+.page-content .wt-team-1 .wt-media {
+    aspect-ratio: 4 / 5 !important; /* Slightly taller to show more of portrait images */
+}
+
+.section-full .wt-team-1 .wt-media img,
+.page-content .wt-team-1 .wt-media img {
+    object-position: center top !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Ensure the head area is prioritized */
+.wt-team-1-single .wt-media img,
+.team-single-section .wt-team-1 .wt-media img {
+    object-position: center 15% !important; /* Position slightly below top to show full head */
 }

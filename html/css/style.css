@@ -15443,11 +15443,14 @@ margin-bottom:0px;}
 .wt-team-1 .wt-media{
 	width:100%;
 	aspect-ratio: 1 / 1;
+	position: relative;
+	overflow: hidden;
 }
 .wt-team-1 .wt-media img{
+	width:100%;
 	height:100%;
 	object-fit:cover;
-	object-position:center 30%;
+	object-position:center top;
 	display:block;
 }
 .wt-team-1 .team-social-center{

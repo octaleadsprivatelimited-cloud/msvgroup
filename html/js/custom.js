@@ -1558,29 +1558,42 @@ $.fn.owlFilter = function(data, callback) {
 
 	// > Contact form function by = custom.js	
 	jQuery(document).on('submit', 'form.cons-contact-form', function(e){
-		e.preventDefault();
 		var form = jQuery(this);
-		/* sending message */
-		jQuery.ajax({
-			url: 'http://thewebmax.com/industro/form-handler2.php',
-			data: form.serialize() + "&action=contactform",
-			type: 'POST',
-			dataType: 'JSON',
-			beforeSend: function() {
-				jQuery('.loading-area').show();
-			},
-
-			success:function(data){
-				jQuery('.loading-area').hide();
-				if(data['success']){
-				jQuery("<div class='alert alert-success'>"+data['message']+"</div>").insertBefore('form.cons-contact-form');
-				}else{
-				jQuery("<div class='alert alert-danger'>"+data['message']+"</div>").insertBefore('form.cons-contact-form');	
+		var formAction = form.attr('action');
+		
+		// If form is using Formspree, handle with AJAX
+		if(formAction && formAction.indexOf('formspree.io') !== -1){
+			e.preventDefault();
+			/* sending message to Formspree */
+			jQuery.ajax({
+				url: formAction,
+				data: form.serialize(),
+				type: 'POST',
+				dataType: 'json',
+				beforeSend: function() {
+					jQuery('.loading-area').show();
+					// Clear previous messages
+					jQuery('.alert').remove();
+				},
+				success: function(data){
+					jQuery('.loading-area').hide();
+					jQuery("<div class='alert alert-success'>Thank you! Your message has been sent successfully.</div>").insertBefore('form.cons-contact-form');
+					jQuery('.cons-contact-form').trigger("reset");
+				},
+				error: function(xhr, status, error){
+					jQuery('.loading-area').hide();
+					var errorMsg = 'Sorry, there was an error sending your message. Please try again.';
+					if(xhr.responseJSON && xhr.responseJSON.error){
+						errorMsg = xhr.responseJSON.error;
+					}
+					jQuery("<div class='alert alert-danger'>"+errorMsg+"</div>").insertBefore('form.cons-contact-form');
 				}
-			}
-		});
-		jQuery('.cons-contact-form').trigger("reset");
-		return false;
+			});
+			return false;
+		} else {
+			// Allow normal form submission for other forms
+			return true;
+		}
 	});
 	
 	
