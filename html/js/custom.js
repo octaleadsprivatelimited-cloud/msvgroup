@@ -1561,6 +1561,49 @@ $.fn.owlFilter = function(data, callback) {
 		var form = jQuery(this);
 		var formAction = form.attr('action');
 		
+		// Check if reCAPTCHA is present and verify
+		var recaptchaWidget = form.find('.g-recaptcha');
+		if(recaptchaWidget.length > 0){
+			var recaptchaResponse = '';
+			// Try to get response using grecaptcha API
+			if(typeof grecaptcha !== 'undefined'){
+				// Get widget ID from the iframe or data attribute
+				var widgetId = recaptchaWidget.attr('data-widget-id');
+				if(!widgetId){
+					// Try to get widget ID from the iframe
+					var iframe = recaptchaWidget.find('iframe');
+					if(iframe.length > 0){
+						var iframeSrc = iframe.attr('src') || '';
+						var match = iframeSrc.match(/render=(\d+)/);
+						if(match && match[1]){
+							widgetId = parseInt(match[1]);
+						}
+					}
+				}
+				if(widgetId !== undefined && widgetId !== null){
+					try {
+						recaptchaResponse = grecaptcha.getResponse(widgetId);
+					} catch(err) {
+						// Fallback to textarea
+						recaptchaResponse = jQuery('.g-recaptcha-response', form).val();
+					}
+				} else {
+					// Fallback: get response from hidden textarea that reCAPTCHA creates
+					recaptchaResponse = jQuery('.g-recaptcha-response', form).val();
+				}
+			} else {
+				// Fallback: get response from hidden textarea
+				recaptchaResponse = jQuery('.g-recaptcha-response', form).val();
+			}
+			if(!recaptchaResponse || recaptchaResponse === ''){
+				e.preventDefault();
+				// Clear previous messages
+				jQuery('.alert').remove();
+				jQuery("<div class='alert alert-danger'>Please complete the reCAPTCHA verification.</div>").insertBefore('form.cons-contact-form');
+				return false;
+			}
+		}
+		
 		// If form is using Formspree, handle with AJAX
 		if(formAction && formAction.indexOf('formspree.io') !== -1){
 			e.preventDefault();
@@ -1579,6 +1622,19 @@ $.fn.owlFilter = function(data, callback) {
 					jQuery('.loading-area').hide();
 					jQuery("<div class='alert alert-success'>Thank you! Your message has been sent successfully.</div>").insertBefore('form.cons-contact-form');
 					jQuery('.cons-contact-form').trigger("reset");
+					// Reset reCAPTCHA
+					if(typeof grecaptcha !== 'undefined'){
+						var recaptchaWidget = form.find('.g-recaptcha');
+						if(recaptchaWidget.length > 0){
+							var widgetId = recaptchaWidget.data('widget-id');
+							if(widgetId !== undefined){
+								grecaptcha.reset(widgetId);
+							} else {
+								// Fallback: reset all widgets
+								grecaptcha.reset();
+							}
+						}
+					}
 				},
 				error: function(xhr, status, error){
 					jQuery('.loading-area').hide();
@@ -1587,6 +1643,19 @@ $.fn.owlFilter = function(data, callback) {
 						errorMsg = xhr.responseJSON.error;
 					}
 					jQuery("<div class='alert alert-danger'>"+errorMsg+"</div>").insertBefore('form.cons-contact-form');
+					// Reset reCAPTCHA on error
+					if(typeof grecaptcha !== 'undefined'){
+						var recaptchaWidget = form.find('.g-recaptcha');
+						if(recaptchaWidget.length > 0){
+							var widgetId = recaptchaWidget.data('widget-id');
+							if(widgetId !== undefined){
+								grecaptcha.reset(widgetId);
+							} else {
+								// Fallback: reset all widgets
+								grecaptcha.reset();
+							}
+						}
+					}
 				}
 			});
 			return false;
