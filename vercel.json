@@ -7,6 +7,15 @@
     {
       "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/error-404",
+      "destination": "/error-404.html"
+    },
+    {
+      "source": "/((?!.*\\.html$).*)",
+      "destination": "/$1.html",
+      "check": true
     }
   ],
   "headers": [

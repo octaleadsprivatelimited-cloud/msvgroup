@@ -24,6 +24,18 @@ ErrorDocument 403 /error-403.html
 ErrorDocument 404 /error-404.html
 ErrorDocument 405 /error-405.html
 
+# Catch-all for non-existent pages - serve 404 internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/error-404\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/error-403\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/error-405\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/error-404$ [NC]
+RewriteCond %{REQUEST_URI} !^/error-403$ [NC]
+RewriteCond %{REQUEST_URI} !^/error-405$ [NC]
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(.*)$ /error-404.html [L]
+
 # Security Headers
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
