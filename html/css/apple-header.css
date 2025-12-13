@@ -90,6 +90,52 @@ APPLE.COM STYLE HEADER - EXACT REPLICA
     font-size: 13px;
 }
 
+.top-contact-right .brochure-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 9px;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.top-contact-right .brochure-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.top-contact-right .brochure-link i {
+    font-size: 13px;
+}
+
+.desktop-nav .brochure-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 10px;
+}
+
+.desktop-nav .brochure-nav-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.desktop-nav .brochure-nav-link i {
+    font-size: 14px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 991px) {
     .top-contact-bar {
