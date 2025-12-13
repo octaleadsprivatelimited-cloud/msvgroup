@@ -76,33 +76,33 @@
         <div class="page-content">
         
             <!-- Error SECTION START -->
-            <div class="video-hero-section" style="height: 100vh; position: relative;">
+            <div class="video-hero-section" style="height: 100vh; position: relative; overflow: hidden;">
                 <!-- Background Video -->
-                <video autoplay muted loop playsinline preload="none" poster="media/images/main-slider/slider1/slide1.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                <video autoplay muted loop playsinline preload="auto" poster="media/images/main-slider/slider1/slide1.jpg" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; object-fit: cover;">
                     <source src="media/images/msv group/msv-add.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <!-- Dark Overlay -->
-                <div class="hero-overlay" style="background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+                <div class="hero-overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
                     
-                    <div class="error-full-page-inner" style="position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;">
-                    	<div class="error-full-page-inner-info" style="text-align: center; max-width: 800px; padding: 60px 40px; background: rgba(255, 255, 255, 0.95); border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px);">
-                            	<h1 style="font-size: 150px; font-weight: 700; color: #1e3a8a; margin: 0 0 30px 0; line-height: 1; text-shadow: 3px 3px 6px rgba(0,0,0,0.1); font-family: 'Outfit', sans-serif;">404</h1>
-                                <h3 style="font-size: 36px; color: #1e293b; margin-bottom: 15px; font-weight: 600; font-family: 'Outfit', sans-serif;">Oops! Page Not Found</h3>
-                                <h4 style="font-size: 24px; color: #64748b; margin-bottom: 25px; font-weight: 400; font-family: 'Outfit', sans-serif;">
-                                    The page you're looking for doesn't exist
-                                </h4>
-                                <p>We�re sorry but we can�t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <p style="font-size: 18px; color: #64748b; line-height: 1.8; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">We're sorry, but the page you requested could not be found. It might have been moved, deleted, or the URL might be incorrect.</p>
-                                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
-                                    <a href="index.html" class="site-button site-btn-effect" style="padding: 15px 40px; font-size: 18px; font-weight: 600; background: #1e3a8a; color: white; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3); margin-right: 15px;">Home Page</a>
-                                    <a href="contact.html" class="site-button site-btn-effect" style="padding: 15px 40px; font-size: 18px; font-weight: 600; background: #3b82f6; color: white; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);">Contact</a>
-                                </div>
-
+                <div class="error-full-page-inner" style="position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                    <div class="error-full-page-inner-info" style="text-align: center; max-width: 600px; padding: 60px 40px; background: rgba(255, 255, 255, 0.95); border-radius: 10px;">
+                        <!-- Error Number -->
+                        <h1 style="font-size: 120px; font-weight: 700; color: #000000; margin: 0 0 20px 0; line-height: 1; font-family: 'Outfit', sans-serif;">404</h1>
+                        
+                        <!-- Error Title -->
+                        <h2 style="font-size: 32px; color: #000000; margin: 0 0 15px 0; font-weight: 600; font-family: 'Outfit', sans-serif;">Page Not Found</h2>
+                        
+                        <!-- Error Subtitle -->
+                        <p style="font-size: 16px; color: #000000; line-height: 1.6; margin: 0 0 40px 0; max-width: 500px; margin-left: auto; margin-right: auto; opacity: 0.8;">The page you're looking for doesn't exist or has been moved.</p>
+                        
+                        <!-- Action Buttons -->
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <button onclick="window.location.href='index.html'" style="padding: 14px 35px; font-size: 16px; font-weight: 500; background: #1e3a8a; color: #ffffff; border-radius: 5px; border: none; cursor: pointer; transition: background 0.3s ease; font-family: 'Outfit', sans-serif;">Home Page</button>
+                            <a href="contact.html" style="padding: 14px 35px; font-size: 16px; font-weight: 500; background: #1e3a8a; color: #ffffff; border: 2px solid #1e3a8a; border-radius: 5px; text-decoration: none; transition: all 0.3s ease; font-family: 'Outfit', sans-serif; display: inline-block;">Contact</a>
                         </div>
                     </div>
-
-
+                </div>
             </div>   
             <!-- Error  SECTION END --> 
             
@@ -161,6 +161,36 @@
         <!-- FLOATING CONTACT BUTTONS END -->
         
          </div>
+
+<!-- CUSTOM STYLES FOR 404 PAGE -->
+<style>
+    .error-full-page-inner-info button:hover {
+        background: #3b82f6 !important;
+    }
+    
+    .error-full-page-inner-info a:hover {
+        background: #3b82f6 !important;
+        border-color: #3b82f6 !important;
+    }
+    
+    @media (max-width: 768px) {
+        .error-full-page-inner-info {
+            padding: 40px 30px !important;
+        }
+        
+        .error-full-page-inner-info h1 {
+            font-size: 80px !important;
+        }
+        
+        .error-full-page-inner-info h2 {
+            font-size: 24px !important;
+        }
+        
+        .error-full-page-inner-info p {
+            font-size: 14px !important;
+        }
+    }
+</style>
 
 <!-- INLINE SCRIPT TO ENSURE LOADING SCREEN HIDES -->
 <script>
