@@ -6401,16 +6401,15 @@ i.fa,
 
 /* Style for Octaleads link in footer */
 .modern-copyright p a {
-    color: #1e3a8a;
+    color: #ffffff !important;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .modern-copyright p a:hover {
-    color: #3b82f6;
+    color: #e2e8f0 !important;
     text-decoration: underline;
-    color: #94a3b8;
 }
 
 .modern-footer-bottom-links {
@@ -7228,4 +7227,10 @@ i.fa,
 .wt-team-1-single .wt-media img,
 .team-single-section .wt-team-1 .wt-media img {
     object-position: center 15% !important; /* Position slightly below top to show full head */
+}
+
+/* 404 Page Button Hover Effects */
+.error-full-page-inner-info .site-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
 }
