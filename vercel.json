@@ -13,9 +13,8 @@
       "destination": "/error-404.html"
     },
     {
-      "source": "/((?!.*\\.html$).*)",
-      "destination": "/$1.html",
-      "check": true
+      "source": "/((?!.*\\.(html|css|js|jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot|pdf|zip|json)$).*)",
+      "destination": "/$1.html"
     }
   ],
   "headers": [
