@@ -10,7 +10,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://msvgroupindia.com/</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -22,65 +22,87 @@
     <!-- About Page -->
     <url>
         <loc>https://msvgroupindia.com/about.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+    
+    <!-- Contact Pages -->
+    <url>
+        <loc>https://msvgroupindia.com/contact.html</loc>
+        <lastmod>2025-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://msvgroupindia.com/contact-1.html</loc>
+        <lastmod>2025-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     
     <!-- Team Pages -->
     <url>
         <loc>https://msvgroupindia.com/team.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-madhu-s.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-subbarao-sutari.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-siva-kumar-tumu.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-malleswara-rao.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-varma-badampudi.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/team-venkat-reddy.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://msvgroupindia.com/team-single.html</loc>
+        <lastmod>2025-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     
     <!-- Projects Page -->
     <url>
         <loc>https://msvgroupindia.com/projects.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -88,56 +110,56 @@
     <!-- Project Detail Pages -->
     <url>
         <loc>https://msvgroupindia.com/project-oncology-icu.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-vaccine-fill-finish.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-biosafety-containment.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-sterile-packaging.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-modular-ot.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-nutraceutical-production.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-isolation-ward.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/project-microelectronics-lab.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -145,98 +167,98 @@
     <!-- Product Pages -->
     <url>
         <loc>https://msvgroupindia.com/product-clean-room-project-design-and-execution.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
+        <loc>https://msvgroupindia.com/product-clean-room/</loc>
+        <lastmod>2025-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://msvgroupindia.com/product-isolation-chambers.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-wall-partitions-cealing-partitions.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-doors-clean-room-doors-wooden-doors.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-laminar-air-flow-systems.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-pass-box.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-ahu.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-unit-dust-collectors.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-hepa-filters-pre-fine-filters.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-vinyl-epoxy-flooring.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-bed-head-panels.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-hospital-ot-icu-designs.html</loc>
-        <lastmod>2025-01-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/product-clean-room/index.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://msvgroupindia.com/product-steel-windows.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -244,7 +266,7 @@
     <!-- Gallery -->
     <url>
         <loc>https://msvgroupindia.com/gallery.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -252,7 +274,7 @@
     <!-- Blog -->
     <url>
         <loc>https://msvgroupindia.com/blog-grid.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -260,23 +282,15 @@
     <!-- FAQ -->
     <url>
         <loc>https://msvgroupindia.com/Faq.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-    </url>
-    
-    <!-- Contact -->
-    <url>
-        <loc>https://msvgroupindia.com/contact.html</loc>
-        <lastmod>2025-01-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
     
     <!-- S-Power Energy -->
     <url>
         <loc>https://msvgroupindia.com/s-power-energy.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -284,10 +298,17 @@
     <!-- Products Demo -->
     <url>
         <loc>https://msvgroupindia.com/products-demo.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
+    <!-- Sitemap Page -->
+    <url>
+        <loc>https://msvgroupindia.com/sitemap.html</loc>
+        <lastmod>2025-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
 </urlset>
-
