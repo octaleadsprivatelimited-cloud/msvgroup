@@ -193,13 +193,6 @@
         <priority>0.7</priority>
     </url>
     
-    <url>
-        <loc>https://msvgroupindia.com/team-single.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
     <!-- Other Pages -->
     <url>
         <loc>https://msvgroupindia.com/gallery.html</loc>
