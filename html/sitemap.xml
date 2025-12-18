@@ -135,13 +135,6 @@
         <priority>0.8</priority>
     </url>
     
-    <url>
-        <loc>https://msvgroupindia.com/products-demo.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
     <!-- Projects -->
     <url>
         <loc>https://msvgroupindia.com/projects.html</loc>
@@ -158,49 +151,7 @@
     </url>
     
     <url>
-        <loc>https://msvgroupindia.com/project-vaccine-fill-finish.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/project-biosafety-containment.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/project-sterile-packaging.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/project-modular-ot.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/project-nutraceutical-production.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>https://msvgroupindia.com/project-isolation-ward.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/project-microelectronics-lab.html</loc>
         <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -272,31 +223,10 @@
     </url>
     
     <url>
-        <loc>https://msvgroupindia.com/blog-grid.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <url>
         <loc>https://msvgroupindia.com/Faq.html</loc>
         <lastmod>2025-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/s-power-energy.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://msvgroupindia.com/sitemap.html</loc>
-        <lastmod>2025-12-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
     </url>
     
 </urlset>
