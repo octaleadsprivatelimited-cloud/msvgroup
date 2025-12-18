@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://msvgroupindia.com/sitemap.xml
+
+# Disallow admin and private files
+Disallow: /css/
+Disallow: /js/
+Disallow: /plugins/
+Disallow: /fonts/
+Disallow: /media/images/msv group/
+Disallow: /*.php$
+Disallow: /error-403.html
+Disallow: /error-405.html
+Disallow: /icon-font.html
+Disallow: /fonts/flaticon.html
+
