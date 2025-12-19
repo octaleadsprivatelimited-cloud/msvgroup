@@ -11,6 +11,8 @@ Disallow: /plugins/
 Disallow: /fonts/
 Disallow: /media/images/msv group/
 Disallow: /*.php$
+
+# Disallow error pages and utility pages
 Disallow: /error-403.html
 Disallow: /error-404.html
 Disallow: /error-405.html
@@ -18,7 +20,4 @@ Disallow: /404.html
 Disallow: /icon-font.html
 Disallow: /fonts/flaticon.html
 Disallow: /products-demo.html
-
-# Prevent duplicate indexing - disallow .html versions (cleanUrls enabled)
-Disallow: /*.html$
 
